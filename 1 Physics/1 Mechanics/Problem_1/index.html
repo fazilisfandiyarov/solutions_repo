@@ -172,8 +172,49 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
 <h1 id="problem-1">Problem 1</h1>
-<div class="arithmatex">\[m\]</div>
-<p>salam</p>
+<h1 id="1-theoretical-foundation">1. Theoretical Foundation</h1>
+<h2 id="governing-equations-of-motion">Governing Equations of Motion</h2>
+<p>Projectile motion can be understood by analyzing the two-dimensional motion of an object under the influence of gravity (assuming air resistance is negligible). The motion splits into horizontal (x) and vertical (y) components. Let’s derive the equations step by step:</p>
+<hr/>
+<h3 id="a-assumptions-setup">a. Assumptions &amp; Setup</h3>
+<ul>
+<li><strong>Initial velocity</strong>: <span class="arithmatex">\(\vec{v}_0\)</span> </li>
+<li><strong>Angle of projection</strong>:  <span class="arithmatex">\(\theta\)</span> </li>
+<li><strong>Gravity</strong>:  <span class="arithmatex">\(g\)</span> (acting downward)  </li>
+<li><strong>Initial position</strong>:  <span class="arithmatex">\((x_0, y_0)\)</span></li>
+<li><strong>Neglecting air resistance</strong></li>
+</ul>
+<p>Initial velocity components:<br/>
+$$
+v_{0x} = v_0 \cos \theta, \quad v_{0y} = v_0 \sin \theta
+$$</p>
+<hr/>
+<h3 id="b-equations-of-motion-derived-from-newtons-second-law">b. Equations of Motion (Derived from Newton's Second Law)</h3>
+<h4 id="horizontal-motion-no-acceleration">Horizontal motion (no acceleration):</h4>
+<div class="arithmatex">\[
+\frac{d^2x}{dt^2} = 0 \Rightarrow \frac{dx}{dt} = v_{0x} \Rightarrow x(t) = x_0 + v_0 \cos \theta \cdot t
+\]</div>
+<h4 id="vertical-motion-constant-acceleration-g">Vertical motion (constant acceleration <span class="arithmatex">\(-g\)</span>):</h4>
+<div class="arithmatex">\[
+\frac{d^2y}{dt^2} = -g \Rightarrow \frac{dy}{dt} = v_{0y} - g t \Rightarrow y(t) = y_0 + v_0 \sin \theta \cdot t - \frac{1}{2} g t^2
+\]</div>
+<hr/>
+<h3 id="c-family-of-solutions-from-varying-initial-conditions">c. Family of Solutions from Varying Initial Conditions</h3>
+<p>The general solution describes the path (trajectory) of the projectile:</p>
+<div class="arithmatex">\[
+\begin{cases}
+x(t) = x_0 + v_0 \cos \theta \cdot t \\
+y(t) = y_0 + v_0 \sin \theta \cdot t - \frac{1}{2} g t^2
+\end{cases}
+\]</div>
+<p>By adjusting <strong>initial conditions</strong>, we generate a <strong>family of parabolic curves</strong>:</p>
+<ul>
+<li>Changing $\theta: affects symmetry and range.</li>
+<li>Changing <span class="arithmatex">\(v_0\)</span>: affects height and distance.</li>
+<li>Changing <span class="arithmatex">\(y_0\)</span>: allows launches from different altitudes.</li>
+<li>Gravity <span class="arithmatex">\(g\)</span>: varies across planets (or in simulations), altering the trajectory.</li>
+</ul>
+<p>Each set of parameters yields a unique solution curve — this richness is what makes projectile motion a powerful educational tool in physics.</p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
