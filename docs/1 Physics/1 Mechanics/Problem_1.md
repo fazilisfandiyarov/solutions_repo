@@ -213,3 +213,7 @@ By modifying initial assumptions, the basic projectile model can be tailored to 
 - **Robotics and automation**
 
 Each modification increases realism at the cost of mathematical simplicity, often requiring computational tools for accurate simulation.
+
+## This simulation provides valuable insight into projectile behavior under varying physical conditions, and serves as a foundation for more complex physics engines in games, simulations, and real-world applications.
+
+![sekil](indir.png)
