@@ -217,3 +217,6 @@ Each modification increases realism at the cost of mathematical simplicity, ofte
 ## This simulation provides valuable insight into projectile behavior under varying physical conditions, and serves as a foundation for more complex physics engines in games, simulations, and real-world applications.
 
 ![sekil](indir.png)
+
+
+[MyColab](https://colab.research.google.com/drive/12NE06aE-DRrZT9HjrQ9rJTGDBE15eayv?usp=sharing)
