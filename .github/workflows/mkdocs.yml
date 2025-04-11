@@ -33,3 +33,34 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Function to compute range based on initial velocity, gravity, and launch angle
+def compute_range(v0, g, angle_deg):
+    angle_rad = np.radians(angle_deg)
+    return (v0**2 * np.sin(2 * angle_rad)) / g
+
+# Define initial conditions
+velocities = [10, 20, 30]  # initial velocities in m/s
+gravity_values = [9.8, 1.6]  # Earth and Moon gravity (m/s^2)
+angles = np.linspace(0, 90, 500)  # angles from 0 to 90 degrees
+
+# Plotting
+plt.figure(figsize=(10, 6))
+
+# Simulate and plot range vs angle for each combination of v0 and g
+for g in gravity_values:
+    for v0 in velocities:
+        ranges = [compute_range(v0, g, theta) for theta in angles]
+        label = f"v0={v0} m/s, g={g} m/s^2"
+        plt.plot(angles, ranges, label=label)
+
+# Customize plot
+plt.title('Projectile Range vs Angle of Projection')
+plt.xlabel('Angle (degrees)')
+plt.ylabel('Range (meters)')
+plt.legend()
+plt.grid(True)
+plt.tight_layout()
+plt.show()
