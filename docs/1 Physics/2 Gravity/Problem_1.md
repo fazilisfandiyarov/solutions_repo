@@ -129,6 +129,9 @@ $$
 - **Gravitationally Complex Systems:** Still useful with corrections for interactions.
 
 ---
+### Here’s a simulation to verify Kepler’s Third Law for circular orbits.
+
+![image](verification%20of%20keplers%20third%20law.png)
 
 ### Advanced Considerations
 
