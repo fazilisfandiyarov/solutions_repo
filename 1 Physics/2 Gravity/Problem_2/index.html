@@ -172,6 +172,208 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
 <h1 id="problem-2">Problem 2</h1>
+<h1 id="cosmic-velocities-first-second-and-third">Cosmic Velocities: First, Second, and Third</h1>
+<p>The concept of cosmic velocities is central to spaceflight. These velocities—<strong>first</strong>, <strong>second</strong>, and <strong>third cosmic velocity</strong>—define the speeds required to enter orbit, escape a planet’s gravity, and ultimately leave the solar system. Understanding them is key to mission design for satellites, planetary exploration, and interstellar probes.</p>
+<hr/>
+<h2 id="1-first-cosmic-velocity-orbital-velocity">1. First Cosmic Velocity — Orbital Velocity</h2>
+<p><strong>Definition</strong>:<br/>
+The <strong>first cosmic velocity</strong> is the minimum speed an object must have to enter a <strong>stable circular orbit</strong> around a celestial body <strong>without further propulsion</strong>.</p>
+<p><strong>Physical Meaning</strong>:
+- At this speed, the object "falls around" the planet.
+- The orbit is circular and sustained due to the balance between gravity and inertia.
+- This speed <strong>does not depend</strong> on the object's mass.</p>
+<p><strong>Formula</strong>:<br/>
+$$
+v_1 = \sqrt{\frac{GM}{R}}
+$$</p>
+<p>Where:<br/>
+- <span class="arithmatex">\(G\)</span>: gravitational constant = <span class="arithmatex">\(6.674 \times 10^{-11} \, \text{m}^3/\text{kg} \cdot \text{s}^2\)</span><br/>
+- <span class="arithmatex">\(M\)</span>: mass of the celestial body<br/>
+- <span class="arithmatex">\(R\)</span>: distance from the center of the body  </p>
+<p><strong>On Earth</strong>:
+- Speed: ~<strong>7.9 km/s</strong> (~28,400 km/h)
+- Used For: Satellites (ISS, GPS), space telescopes</p>
+<hr/>
+<h2 id="2-second-cosmic-velocity-escape-velocity">2. Second Cosmic Velocity — Escape Velocity</h2>
+<p><strong>Definition</strong>:<br/>
+The <strong>second cosmic velocity</strong> is the minimum speed required to <strong>escape the gravitational field</strong> of a celestial body <strong>without additional propulsion</strong>.</p>
+<p><strong>Physical Meaning</strong>:
+- The kinetic energy of the object equals the gravitational potential energy needed to escape.
+- No return unless additional force is applied.</p>
+<p><strong>Formula</strong>:<br/>
+$$
+v_2 = \sqrt{\frac{2GM}{R}} = \sqrt{2} \cdot v_1
+$$</p>
+<p><strong>On Earth</strong>:
+- Speed: ~<strong>11.2 km/s</strong> (~40,320 km/h)
+- Used For: Moon missions, Mars missions, deep space probes</p>
+<hr/>
+<h2 id="3-third-cosmic-velocity-heliocentric-escape">3. Third Cosmic Velocity — Heliocentric Escape</h2>
+<p><strong>Definition</strong>:<br/>
+The <strong>third cosmic velocity</strong> is the minimum speed required to <strong>escape the Sun’s gravitational field</strong>, starting from Earth’s orbit.</p>
+<p><strong>Formula</strong>:<br/>
+$$
+v_3 = \sqrt{\frac{2GM_{\odot}}{r}} - v_{\text{Earth orbit}}
+$$</p>
+<p>Where:<br/>
+- <span class="arithmatex">\(M_{\odot}\)</span>: mass of the Sun<br/>
+- <span class="arithmatex">\(r\)</span>: Earth's orbital radius (~1 AU)<br/>
+- <span class="arithmatex">\(v_{\text{Earth orbit}}\)</span>: Earth’s orbital speed (~29.78 km/s)</p>
+<p><strong>From Earth’s Orbit</strong>:
+- Speed: ~<strong>16.7 km/s</strong>
+- Used For: Voyager, Pioneer, New Horizons</p>
+<hr/>
+<h2 id="summary-table">Summary Table</h2>
+<table>
+<thead>
+<tr>
+<th>Velocity</th>
+<th>Purpose</th>
+<th>Speed from Earth</th>
+<th>Applications</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1st</strong></td>
+<td>Stable orbit around Earth</td>
+<td>~7.9 km/s</td>
+<td>Satellites, ISS</td>
+</tr>
+<tr>
+<td><strong>2nd</strong></td>
+<td>Escape Earth’s gravity</td>
+<td>~11.2 km/s</td>
+<td>Moon, Mars, interplanetary probes</td>
+</tr>
+<tr>
+<td><strong>3rd</strong></td>
+<td>Escape Solar System</td>
+<td>~16.7 km/s</td>
+<td>Voyager 1, interstellar missions</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<h2 id="comparative-cosmic-velocities-on-planets">Comparative Cosmic Velocities on Planets</h2>
+<h3 id="formulae-recap">Formulae Recap:</h3>
+<ul>
+<li><span class="arithmatex">\(v_1 = \sqrt{\frac{GM}{R}}\)</span></li>
+<li><span class="arithmatex">\(v_2 = \sqrt{2GM/R}\)</span></li>
+</ul>
+<h3 id="constants">Constants:</h3>
+<table>
+<thead>
+<tr>
+<th>Body</th>
+<th>Mass (kg)</th>
+<th>Radius (m)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Earth</td>
+<td><span class="arithmatex">\(5.972 \times 10^{24}\)</span></td>
+<td><span class="arithmatex">\(6.371 \times 10^6\)</span></td>
+</tr>
+<tr>
+<td>Mars</td>
+<td><span class="arithmatex">\(6.417 \times 10^{23}\)</span></td>
+<td><span class="arithmatex">\(3.390 \times 10^6\)</span></td>
+</tr>
+<tr>
+<td>Jupiter</td>
+<td><span class="arithmatex">\(1.898 \times 10^{27}\)</span></td>
+<td><span class="arithmatex">\(6.9911 \times 10^7\)</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated-velocities">Calculated Velocities:</h3>
+<table>
+<thead>
+<tr>
+<th>Planet</th>
+<th><span class="arithmatex">\(v_1\)</span> (km/s)</th>
+<th><span class="arithmatex">\(v_2\)</span> (km/s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Earth</td>
+<td>7.91</td>
+<td>11.19</td>
+</tr>
+<tr>
+<td>Mars</td>
+<td>3.55</td>
+<td>5.03</td>
+</tr>
+<tr>
+<td>Jupiter</td>
+<td>42.1</td>
+<td>59.5</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<h3 id="visualization">Visualization</h3>
+<p><img alt="alt text" src="../Cosmic%20velocities%20bar.png"/></p>
+<h2 id="real-world-applications">Real-World Applications</h2>
+<h3 id="satellite-launches-first-cosmic-velocity">Satellite Launches — First Cosmic Velocity</h3>
+<ul>
+<li><strong>Goal</strong>: Insert into orbit</li>
+<li><strong>Example</strong>: ISS orbits at ~7.66 km/s</li>
+<li><strong>Notes</strong>: Insufficient speed = falling back to Earth</li>
+</ul>
+<h3 id="planetary-missions-second-cosmic-velocity">Planetary Missions — Second Cosmic Velocity</h3>
+<ul>
+<li><strong>Goal</strong>: Leave Earth to reach Moon, Mars, or beyond</li>
+<li><strong>Example</strong>: Mars Rover launches exceed 11.2 km/s</li>
+</ul>
+<h3 id="interstellar-missions-third-cosmic-velocity">Interstellar Missions — Third Cosmic Velocity</h3>
+<ul>
+<li><strong>Goal</strong>: Exit Solar System</li>
+<li><strong>Examples</strong>:  </li>
+<li><strong>Voyager 1</strong>: Exceeded third velocity via gravity assists  </li>
+<li><strong>New Horizons</strong>: Fastest launch to date (~16.26 km/s)</li>
+</ul>
+<hr/>
+<h2 id="engineering-and-strategy-considerations">Engineering and Strategy Considerations</h2>
+<table>
+<thead>
+<tr>
+<th>Factor</th>
+<th>Influence on Velocities</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mass of central body</td>
+<td>↑ mass → ↑ velocity required</td>
+</tr>
+<tr>
+<td>Radius from center</td>
+<td>↑ radius → ↓ velocity required</td>
+</tr>
+<tr>
+<td>Launch direction</td>
+<td>Prograde (with orbit) helps</td>
+</tr>
+<tr>
+<td>Atmosphere (real world)</td>
+<td>Requires more than ideal velocity due to drag</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note</strong>: Gravity assists and multi-stage propulsion systems help mitigate these energy demands.</p>
+<hr/>
+<h2 id="conclusion">Conclusion</h2>
+<p>The <strong>cosmic velocities</strong> provide a roadmap for the stages of space exploration:
+- <strong>First</strong>: Staying in orbit
+- <strong>Second</strong>: Leaving Earth
+- <strong>Third</strong>: Leaving the Solar System</p>
+<p>Understanding and achieving these velocities remains a foundation of both current and future space missions, from launching satellites to exploring interstellar frontiers.</p>
+<hr/>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
