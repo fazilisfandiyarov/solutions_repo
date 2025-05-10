@@ -127,6 +127,10 @@ These insights show how adjusting launch conditions can precisely control the mo
 
 ![image](ProjectileRange.png)
 
+### This graph shows motion trajectories for various launch angles (15°, 30°, 45°, 60°, 75°) at a fixed initial velocity of 50 m/s.
+
+![image](efectofinitialvelocity.png)
+
 # 3. Practical Applications
 
 ## Adapting the Model for Real-World Situations
@@ -219,9 +223,11 @@ By modifying initial assumptions, the basic projectile model can be tailored to 
 
 Each modification increases realism at the cost of mathematical simplicity, often requiring computational tools for accurate simulation.
 
-## This simulation provides valuable insight into projectile behavior under varying physical conditions, and serves as a foundation for more complex physics engines in games, simulations, and real-world applications.
+### Effect of Initial Velocity on Range: Higher initial velocity significantly increases the range, following a quadratic relationship
 
-![sekil](indir.png)
+![image](efefctofinitalvelocity2.png)
 
+### Effect of Gravity on Range: Weaker gravity (e.g., on the Moon) allows for much longer travel distances, while stronger gravity (e.g., on Jupiter) greatly reduces the range.
+![image](efect%20of%20gravity%20on%20range.png)
 
 [MyColab](https://colab.research.google.com/drive/12NE06aE-DRrZT9HjrQ9rJTGDBE15eayv?usp=sharing)
