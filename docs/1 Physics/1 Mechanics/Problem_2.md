@@ -155,15 +155,15 @@ These applications highlight the importance of understanding forced damped oscil
 
 2) Effect of Driving Amplitude: Higher amplitudes lead to more pronounced oscillations and potential nonlinear effects.
 
-![Effect of Driving Amplitude](Pendulum%20Motion%202.png)
+![Effect of Driving Amplitude](pendulum%20motion%202.png)
 
 3) Effect of Driving Frequency: Near resonance, the response is maximized, while at high frequencies, oscillations become irregular.
 
-![Effect of Driving Frequency](Pendulum%20Motion%203.png)
+![Effect of Driving Frequency](diriving%20frequency.png)
 
 ## Visualizations of the transition from regular to chaotic motion:
 
-![visualization](space%20plots.png)
+![visualization](visualization.png)
 
 1. Phase Space (Regular vs. Chaotic Motion)
     - Regular motion forms smooth, closed curves.
@@ -178,9 +178,11 @@ These applications highlight the importance of understanding forced damped oscil
     - Chaotic motion exhibits irregular and non-repeating behavior.
 ## Bifurcation Diagram
 
+![pendulum](bifurcation.png)
+
 ## Three pendulum systems: Simple, Damped, and Forced each with a time Series (theta vs time) and phase portrait (omega vs theta)
 
-![pendulum](pendulum.png)
+![alt text](threependulum.png)
 
 ## Conclusion
 
