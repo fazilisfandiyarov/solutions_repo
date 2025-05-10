@@ -122,6 +122,11 @@ $$
 - Decreasing **gravity** also increases range.
 
 These insights show how adjusting launch conditions can precisely control the motion of a projectile — a principle used in everything from sports to space travel.
+
+### Plot showing how the range varies with the angle of projection. As expected, the range is maximized at 45°, and it symmetrically decreases for angles above and below this value
+
+[image](ProjectileRange.png)
+
 # 3. Practical Applications
 
 ## Adapting the Model for Real-World Situations
