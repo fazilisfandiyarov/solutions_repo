@@ -24,9 +24,7 @@ This equation represents a second-order nonlinear differential equation due to t
 
 For small angles ($\theta \approx 0$), we can use the small-angle approximation:
 
-$$
-\sin\theta \approx \theta
-$$
+$$\sin\theta \approx \theta$$
 
 This simplifies the equation to a linear form:
 
