@@ -2,7 +2,7 @@
 
 # 1. Theoretical Foundation
 
-## Governing Equations of Motion  salam
+## Governing Equations of Motion
 
 Projectile motion can be understood by analyzing the two-dimensional motion of an object under the influence of gravity (assuming air resistance is negligible). The motion splits into horizontal (x) and vertical (y) components. Let’s derive the equations step by step:
 
