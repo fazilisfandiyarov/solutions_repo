@@ -169,7 +169,7 @@ $$v_{\text{esc}} \approx 11.2 \, \text{km/s}$$
 
 ## Motion in Uniform Density Earth — Case 1
 
-![Uniform gravity field](![alt text](image.png)Objec%20Trajectories.png)
+![Uniform gravity field](Objec%20Trajectories.png)
 
 Assuming Earth is a filled sphere with constant density, this simulation plots trajectories under a **uniform gravitational field**.
 
