@@ -1,4 +1,4 @@
-# Problem 2# Problem 2
+# Problem 2
 
 ## 1) Differential Equation of the Forced Damped Pendulum
 
