@@ -60,6 +60,52 @@
 </li>
 <li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 3</a>
 <ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="#payload-trajectories-near-earth">Payload Trajectories Near Earth</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#overview-of-orbital-paths">Overview of Orbital Paths</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#total-energy-equation">Total Energy Equation</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#1-elliptical-path">1. Elliptical Path</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#2-parabolic-path">2. Parabolic Path</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#3-hyperbolic-path">3. Hyperbolic Path</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#4-suborbital-trajectory">4. Suborbital Trajectory</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#recap">Recap</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#numerical-modeling-simulating-payload-motion">Numerical Modeling: Simulating Payload Motion</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#gravitational-force">Gravitational Force</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#solving-with-runge-kutta-rk4">Solving with Runge-Kutta (RK4)</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#initial-setup">Initial Setup</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#applications-of-trajectories">Applications of Trajectories</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#1-achieving-orbit-elliptical-or-circular">1. Achieving Orbit (Elliptical or Circular)</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#2-reentry-suborbital-or-decaying-orbit">2. Reentry (Suborbital or Decaying Orbit)</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#3-escape-hyperbolic-path">3. Escape (Hyperbolic Path)</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#comparative-scenarios">Comparative Scenarios</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#visuals">Visuals</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#motion-in-uniform-density-earth-case-1">Motion in Uniform Density Earth — Case 1</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#alternate-setup-case-2">Alternate Setup — Case 2</a>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -172,6 +218,191 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
 <h1 id="problem-3">Problem 3</h1>
+<h2 id="payload-trajectories-near-earth">Payload Trajectories Near Earth</h2>
+<p>When a payload is let go from a rocket traveling near Earth, its path is shaped by the <strong>initial speed</strong> it has and <strong>Earth’s gravity</strong>. These paths take the form of <strong>conic sections</strong>, and the type of trajectory depends on the object’s <strong>total mechanical energy</strong>.</p>
+<hr/>
+<h2 id="overview-of-orbital-paths">Overview of Orbital Paths</h2>
+<table>
+<thead>
+<tr>
+<th>Path Type</th>
+<th>Condition (Total Energy)</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Ellipse</strong></td>
+<td><span class="arithmatex">\(E &lt; 0\)</span></td>
+<td>Closed orbit — payload stays bound to Earth</td>
+</tr>
+<tr>
+<td><strong>Parabola</strong></td>
+<td><span class="arithmatex">\(E = 0\)</span></td>
+<td>Edge case — just escapes Earth’s gravity</td>
+</tr>
+<tr>
+<td><strong>Hyperbola</strong></td>
+<td><span class="arithmatex">\(E &gt; 0\)</span></td>
+<td>Escape route — payload leaves permanently</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<h2 id="total-energy-equation">Total Energy Equation</h2>
+<div class="arithmatex">\[
+E = \frac{1}{2}mv^2 - \frac{GMm}{r}
+\]</div>
+<p>Where:<br/>
+- <span class="arithmatex">\(m\)</span> = payload mass<br/>
+- <span class="arithmatex">\(v\)</span> = velocity at release<br/>
+- <span class="arithmatex">\(G\)</span> = universal gravitational constant<br/>
+- <span class="arithmatex">\(M\)</span> = Earth's mass<br/>
+- <span class="arithmatex">\(r\)</span> = distance from Earth’s center  </p>
+<hr/>
+<h2 id="1-elliptical-path">1. Elliptical Path</h2>
+<ul>
+<li><strong>Condition</strong>: <span class="arithmatex">\(v &lt; v_{esc}\)</span> </li>
+<li><strong>Shape</strong>: Closed orbital motion  </li>
+<li><strong>Example</strong>: Satellites in Earth orbit  </li>
+</ul>
+<hr/>
+<h2 id="2-parabolic-path">2. Parabolic Path</h2>
+<ul>
+<li><strong>Condition</strong>: <span class="arithmatex">\(v = v_{esc} = \sqrt{\frac{2GM}{r}}\)</span> </li>
+<li><strong>Shape</strong>: Open path with zero excess energy  </li>
+<li><strong>Example</strong>: Rare theoretical boundary case  </li>
+</ul>
+<hr/>
+<h2 id="3-hyperbolic-path">3. Hyperbolic Path</h2>
+<ul>
+<li><strong>Condition</strong>: <span class="arithmatex">\(v &gt; v_{esc}\)</span> </li>
+<li><strong>Shape</strong>: Open curve leading away from Earth  </li>
+<li><strong>Example</strong>: Probes headed for deep space  </li>
+</ul>
+<hr/>
+<h2 id="4-suborbital-trajectory">4. Suborbital Trajectory</h2>
+<ul>
+<li><strong>Condition</strong>: Released with insufficient horizontal speed, near atmosphere  </li>
+<li><strong>Shape</strong>: Arcing path that falls back to Earth  </li>
+<li><strong>Example</strong>: Missiles, test vehicles, and reentry modules  </li>
+</ul>
+<hr/>
+<h2 id="recap">Recap</h2>
+<ul>
+<li><strong>Elliptical</strong>: Object remains in Earth orbit.  </li>
+<li><strong>Parabolic</strong>: Reaches escape speed with no surplus energy.  </li>
+<li><strong>Hyperbolic</strong>: Surpasses escape speed, permanently departing.  </li>
+<li><strong>Suborbital</strong>: Lacks energy for orbit, falls back.</li>
+</ul>
+<hr/>
+<h2 id="numerical-modeling-simulating-payload-motion">Numerical Modeling: Simulating Payload Motion</h2>
+<h3 id="gravitational-force">Gravitational Force</h3>
+<p>The motion of a freely released payload is controlled by gravitational attraction, expressed by Newton’s universal gravitation law:</p>
+<div class="arithmatex">\[
+F = -\frac{G M m}{r^2} \hat{r}
+\]</div>
+<p>Where:<br/>
+- <span class="arithmatex">\(G = 6.674 \times 10^{-11} \, \text{m}^3 \, \text{kg}^{-1} \, \text{s}^{-2}\)</span><br/>
+- <span class="arithmatex">\(M = 5.972 \times 10^{24} \, \text{kg}\)</span><br/>
+- <span class="arithmatex">\(r\)</span>: Distance from Earth’s center<br/>
+- <span class="arithmatex">\(\hat{r}\)</span>: Unit vector from Earth to payload  </p>
+<p>Via Newton’s Second Law, <span class="arithmatex">\(F = ma\)</span>, we derive:</p>
+<div class="arithmatex">\[
+\frac{d^2 r}{dt^2} = -\frac{G M r}{r^3}
+\]</div>
+<hr/>
+<h3 id="solving-with-runge-kutta-rk4">Solving with Runge-Kutta (RK4)</h3>
+<p>To compute the trajectory numerically, we use the <strong>Runge-Kutta 4th order method</strong>. This transforms the second-order ODE into a first-order system:</p>
+<div class="arithmatex">\[
+\frac{d r}{dt} = v, \quad \frac{d v}{dt} = -\frac{G M r}{r^3}
+\]</div>
+<h3 id="initial-setup">Initial Setup</h3>
+<ul>
+<li><strong>Starting Point</strong>: Payload begins 500 km above Earth’s surface, so <span class="arithmatex">\(r_0 = R_{\text{Earth}} + 500\,\text{km}\)</span> </li>
+<li><strong>Initial Speed</strong>: Varies depending on the mission goal (orbit, escape, or suborbital arc)</li>
+</ul>
+<hr/>
+<h2 id="applications-of-trajectories">Applications of Trajectories</h2>
+<h3 id="1-achieving-orbit-elliptical-or-circular">1. <strong>Achieving Orbit (Elliptical or Circular)</strong></h3>
+<ul>
+<li><strong>How</strong>: Released with enough tangential velocity to counter gravity  </li>
+<li><strong>Outcome</strong>: Remains in a closed orbit  </li>
+<li><strong>Requirement</strong>: <span class="arithmatex">\(v &lt; v_{esc}\)</span> and <span class="arithmatex">\(E &lt; 0\)</span> </li>
+<li><strong>Examples</strong>: Satellites, space stations  </li>
+</ul>
+<p><strong>Typical Case</strong>:<br/>
+<span class="arithmatex">\(<span class="arithmatex">\(v_{\text{orbit}} = \sqrt{\frac{GM}{r}} \approx 7.7 \, \text{km/s (at 300 km altitude)}\)</span>\)</span></p>
+<hr/>
+<h3 id="2-reentry-suborbital-or-decaying-orbit">2. <strong>Reentry (Suborbital or Decaying Orbit)</strong></h3>
+<ul>
+<li><strong>How</strong>: Released with inadequate velocity or affected by drag  </li>
+<li><strong>Outcome</strong>: Falls back to Earth  </li>
+<li><strong>Example</strong>: Test capsules, missiles  </li>
+</ul>
+<p><strong>Visual</strong>: Steep arc that reenters the atmosphere, like a downward parabola</p>
+<hr/>
+<h3 id="3-escape-hyperbolic-path">3. <strong>Escape (Hyperbolic Path)</strong></h3>
+<ul>
+<li><strong>How</strong>: Achieves or exceeds escape velocity  </li>
+<li><strong>Outcome</strong>: Leaves Earth’s gravity permanently  </li>
+<li><strong>Requirement</strong>: <span class="arithmatex">\(v \geq \sqrt{\frac{2GM}{r}}\)</span> and <span class="arithmatex">\(E \geq 0\)</span> </li>
+<li><strong>Examples</strong>: Voyager, interplanetary missions  </li>
+</ul>
+<p><strong>At Sea Level</strong>:<br/>
+<span class="arithmatex">\(<span class="arithmatex">\(v_{\text{esc}} \approx 11.2 \, \text{km/s}\)</span>\)</span></p>
+<hr/>
+<h2 id="comparative-scenarios">Comparative Scenarios</h2>
+<table>
+<thead>
+<tr>
+<th>Condition</th>
+<th>Trajectory Type</th>
+<th>Speed Range</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Orbital Insertion</td>
+<td>Elliptical or Circular</td>
+<td>~7.7 km/s</td>
+<td>Earth satellites, ISS</td>
+</tr>
+<tr>
+<td>Reentry</td>
+<td>Suborbital</td>
+<td>&lt; 7.7 km/s</td>
+<td>Capsules, suborbital flights</td>
+</tr>
+<tr>
+<td>Escape</td>
+<td>Hyperbolic</td>
+<td>&gt; 11.2 km/s</td>
+<td>Interplanetary or interstellar</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<h2 id="visuals">Visuals</h2>
+<ul>
+<li><strong>1st Cosmic Velocity</strong> → stable circular orbit  </li>
+<li><strong>2nd Cosmic Velocity</strong> → parabolic escape  </li>
+<li><strong>3rd Cosmic Velocity</strong> → hyperbolic path beyond Earth and Sun  </li>
+</ul>
+<p><img alt="Payload trajectories" src="../Payload%20Trajectories%20with%20Earth.png"/></p>
+<hr/>
+<h2 id="motion-in-uniform-density-earth-case-1">Motion in Uniform Density Earth — Case 1</h2>
+<p><img alt="Uniform gravity field" src="![alt text](image.png)Objec%20Trajectories.png"/></p>
+<p>Assuming Earth is a filled sphere with constant density, this simulation plots trajectories under a <strong>uniform gravitational field</strong>.</p>
+<ul>
+<li><strong>Orbits 1–4</strong>: Bound paths (elliptical/circular)  </li>
+<li><strong>Path 5</strong>: A high arc; object almost escapes  </li>
+<li><strong>Path 6</strong>: Escape trajectory — object exits gravity well  </li>
+</ul>
+<hr/>
+<h3 id="alternate-setup-case-2">Alternate Setup — Case 2</h3>
+<p><img alt="Alternate case" src="../case2.png"/></p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
