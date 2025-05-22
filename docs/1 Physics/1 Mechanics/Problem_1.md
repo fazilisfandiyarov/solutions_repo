@@ -1,61 +1,55 @@
-# Problem 1
+## Theoretical Foundation
 
-# 1. Theoretical Foundation
+### Governing Equations of Motion
 
-## Governing Equations of Motion
+To analyze the range of a projectile as a function of its angle of projection, we begin with Newton's second law and apply it to motion in two dimensions, under the influence of gravity and assuming no air resistance.
 
-Projectile motion can be understood by analyzing the two-dimensional motion of an object under the influence of gravity (assuming air resistance is negligible). The motion splits into horizontal (x) and vertical (y) components. Let’s derive the equations step by step:
+Let:
+- &&v_0&& be the initial velocity,
+- &&\theta&& be the angle of projection with respect to the horizontal,
+- &&g&& be the acceleration due to gravity,
+- &&x(t)&& and &&y(t)&& be the horizontal and vertical positions as functions of time.
 
----
-
-### a. Assumptions & Setup
-
-- **Initial velocity**: $\vec{v}_0$  
-- **Angle of projection**:  $\theta$  
-- **Gravity**:  $g$ (acting downward)  
-- **Initial position**:  $(x_0, y_0)$
-- **Neglecting air resistance**
-
-Initial velocity components:  
+#### 1. **Horizontal Motion (x-direction)**
+There is no acceleration in the horizontal direction:
 $$
-v_{0x} = v_0 \cos \theta, \quad v_{0y} = v_0 \sin \theta
+\frac{d^2x}{dt^2} = 0 \Rightarrow \frac{dx}{dt} = v_0 \cos(\theta) \Rightarrow x(t) = v_0 \cos(\theta) t
 $$
 
----
-
-### b. Equations of Motion (Derived from Newton's Second Law)
-
-#### Horizontal motion (no acceleration):
+#### 2. **Vertical Motion (y-direction)**
+The only acceleration is due to gravity:
 $$
-\frac{d^2x}{dt^2} = 0 \Rightarrow \frac{dx}{dt} = v_{0x} \Rightarrow x(t) = x_0 + v_0 \cos \theta \cdot t
+\frac{d^2y}{dt^2} = -g \Rightarrow \frac{dy}{dt} = v_0 \sin(\theta) - gt \Rightarrow y(t) = v_0 \sin(\theta) t - \frac{1}{2}gt^2
 $$
 
-#### Vertical motion (constant acceleration $-g$):
-$$
-\frac{d^2y}{dt^2} = -g \Rightarrow \frac{dy}{dt} = v_{0y} - g t \Rightarrow y(t) = y_0 + v_0 \sin \theta \cdot t - \frac{1}{2} g t^2
-$$
+### Time of Flight and Range
 
----
-
-### c. Family of Solutions from Varying Initial Conditions
-
-The general solution describes the path (trajectory) of the projectile:
+To find the **range** &&R&&, we determine the total time of flight by setting &&y(t) = 0&& (assuming launch and landing at the same height):
 
 $$
-\begin{cases}
-x(t) = x_0 + v_0 \cos \theta \cdot t \\
-y(t) = y_0 + v_0 \sin \theta \cdot t - \frac{1}{2} g t^2
-\end{cases}
+v_0 \sin(\theta) t - \frac{1}{2}gt^2 = 0 \Rightarrow t (v_0 \sin(\theta) - \frac{1}{2}gt) = 0
 $$
 
-By adjusting **initial conditions**, we generate a **family of parabolic curves**:
+Solving for &&t \neq 0&&:
+$$
+t = \frac{2v_0 \sin(\theta)}{g}
+$$
 
-- Changing $\theta: affects symmetry and range.
-- Changing $v_0$: affects height and distance.
-- Changing $y_0$: allows launches from different altitudes.
-- Gravity $g$: varies across planets (or in simulations), altering the trajectory.
+Now, substitute into &&x(t)&& to get the range &&R&&:
 
-Each set of parameters yields a unique solution curve — this richness is what makes projectile motion a powerful educational tool in physics.
+$$
+R = v_0 \cos(\theta) \cdot \frac{2v_0 \sin(\theta)}{g} = \frac{v_0^2 \sin(2\theta)}{g}
+$$
+
+### Influence of Initial Conditions
+
+This equation illustrates that:
+- The **initial speed** &&v_0&& increases the range quadratically.
+- The **angle** &&\theta&& affects the range via the &&\sin(2\theta)&& function, with a maximum at &&\theta = 45^\circ&&.
+- The **gravitational acceleration** &&g&& inversely affects the range.
+
+Different combinations of these parameters produce a **family of trajectories**, all governed by the same set of physical laws. The sensitivity to initial conditions makes projectile motion a powerful model for understanding both ideal and real-world scenarios.
+
 
 # 2. Analysis of the Range
 
