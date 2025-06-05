@@ -4,7 +4,7 @@
 
 ---
 
-##  Key Features
+## 🔑 Key Features
 
 - **Sensitivity to Initial Conditions**  
   Tiny changes at the start can lead to big differences later. This is called the **butterfly effect**.
@@ -17,23 +17,23 @@
 
 ---
 
-##  Examples of Chaos in Deterministic Systems
+## 🔬 Examples of Chaos in Deterministic Systems
 
--  **Weather Systems**  
+- 🌦️ **Weather Systems**  
   The weather is governed by physical laws, but small changes can greatly affect outcomes.
 
--  **The Logistic Map**  
+- 📈 **The Logistic Map**  
   A simple math model used to study population growth can show chaotic behavior.
 
--  **Double Pendulum**  
+- 🌀 **Double Pendulum**  
   A pendulum with another pendulum attached moves in a complex, unpredictable way.
 
--  **Electronic Circuits & Fluid Flow**  
+- ⚡ **Electronic Circuits & Fluid Flow**  
   Some engineered and natural systems show chaotic patterns even with clear rules.
 
 ---
 
-##  The Butterfly Effect
+## 🦋 The Butterfly Effect
 
 > A butterfly flapping its wings in Brazil could set off a tornado in Texas.
 
@@ -41,7 +41,7 @@ This idea highlights how a very small cause can have a large effect over time in
 
 ---
 
-##  Summary
+## ✅ Summary
 
 - Chaos doesn't always mean randomness.
 - **Deterministic chaos** comes from systems with simple rules but complex behavior.
