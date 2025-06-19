@@ -174,6 +174,75 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
 <h1 id="problem-1">Problem 1</h1>
+<h1 id="interference-patterns-from-point-wave-sources-on-a-water-surface">Interference Patterns from Point Wave Sources on a Water Surface</h1>
+<h2 id="objective">Objective</h2>
+<p>To analyze the interference pattern formed by the superposition of circular waves emitted from point sources placed at the vertices of a <em>regular polygon</em> on the water surface.</p>
+<h2 id="motivation">Motivation</h2>
+<p>Interference occurs when waves overlap, creating complex patterns that illustrate how waves interact. By placing point sources at the vertices of a regular polygon, we can observe and analyze the constructive and destructive interference patterns resulting from wave superposition.</p>
+<hr/>
+<h2 id="selecting-a-regular-polygon">Selecting a Regular Polygon</h2>
+<p>We select a <em>square</em> (regular polygon with 4 equal sides and angles) as the configuration.</p>
+<hr/>
+<h2 id="position-the-sources">Position the Sources</h2>
+<p>Let the side length of the square be L, and place the center of the square at the origin (0, 0). The coordinates of the four sources are:</p>
+<ul>
+<li><span class="arithmatex">\((x_1, y_1) = (-L/2, -L/2)\)</span></li>
+<li><span class="arithmatex">\((x_2, y_2) = (L/2, -L/2)\)</span></li>
+<li><span class="arithmatex">\((x_3, y_3) = (L/2, L/2)\)</span></li>
+<li><span class="arithmatex">\((x_4, y_4) = (-L/2, L/2)\)</span></li>
+</ul>
+<hr/>
+<h2 id="wave-equations-for-each-source">Wave Equations for Each Source</h2>
+<p>Each wave is described by:</p>
+<div class="arithmatex">\[
+\eta_i(x, y, t) = \frac{A}{\sqrt{r_i}} \cdot \cos(kr_i - \omega t + \phi)
+\]</div>
+<p>Where:</p>
+<ul>
+<li><span class="arithmatex">\(r_i = \sqrt{(x - x_i)^2 + (y - y_i)^2}\)</span></li>
+<li><span class="arithmatex">\(A\)</span>: Amplitude of the wave</li>
+<li><span class="arithmatex">\(k = \frac{2\pi}{\lambda}\)</span>: Wave number</li>
+<li><span class="arithmatex">\(\omega = 2\pi f\)</span>: Angular frequency</li>
+<li><span class="arithmatex">\(\phi\)</span>: Initial phase (assumed 0 for all sources for simplicity)</li>
+</ul>
+<hr/>
+<h2 id="superposition-of-waves">Superposition of Waves</h2>
+<p>The total displacement at point <span class="arithmatex">\((x, y)\)</span> is the sum:</p>
+<div class="arithmatex">\[
+\eta_{\text{sum}}(x, y, t) = \sum_{i=1}^{4} \eta_i(x, y, t)
+\]</div>
+<hr/>
+<h2 id="analyzing-interference-patterns">Analyzing Interference Patterns</h2>
+<h3 id="constructive-interference">Constructive Interference</h3>
+<p>Occurs when the waves arrive in phase:</p>
+<div class="arithmatex">\[
+kr_i - \omega t \approx kr_j - \omega t \quad \text{for } i \neq j
+\]</div>
+<p>This leads to <em>amplification</em>.</p>
+<h3 id="destructive-interference">Destructive Interference</h3>
+<p>Occurs when waves are out of phase by <span class="arithmatex">\(<span class="arithmatex">\(\pi\)</span>\)</span>:</p>
+<div class="arithmatex">\[
+kr_i - \omega t \approx kr_j - \omega t + \pi
+\]</div>
+<p>This leads to <em>cancellation</em>.</p>
+<hr/>
+<h2 id="visualization">Visualization</h2>
+<p>The resulting pattern can be visualized using a 2D color map of <span class="arithmatex">\(\eta_{\text{sum}}(x, y, t)\)</span> at a fixed time. High-intensity regions represent constructive interference; dark regions represent destructive interference.</p>
+<p><img alt="alt text" src="interference_animation.gif"/></p>
+<hr/>
+<h2 id="optional-parameters-used-for-simulation">Optional Parameters Used for Simulation</h2>
+<ul>
+<li>Amplitude <span class="arithmatex">\(A = 1\)</span></li>
+<li>Wavelength <span class="arithmatex">\(\lambda = 2\)</span></li>
+<li>Frequency <span class="arithmatex">\(f = 1\)</span></li>
+<li>Phase <span class="arithmatex">\(\phi = 0\)</span></li>
+<li>Square side length <span class="arithmatex">\(L = 4\)</span></li>
+</ul>
+<h2 id="3d-visualization">3d Visualization</h2>
+<p><img alt="alt text" src="interference_4_sources_slower-1.gif"/></p>
+<h2 id="conclusion">Conclusion</h2>
+<p>By placing wave sources at the corners of a square and applying the principle of superposition, we can visualize intricate interference patterns. This exercise provides insight into the behavior of waves and how geometry influences interference on a water surface.</p>
+<hr/>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
