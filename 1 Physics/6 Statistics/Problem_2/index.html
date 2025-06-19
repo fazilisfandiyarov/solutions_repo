@@ -174,6 +174,203 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
 <h1 id="problem-2">Problem 2</h1>
+<h1 id="estimating-using-monte-carlo-methods">Estimating π Using Monte Carlo Methods</h1>
+<hr/>
+<h2 id="theoretical-foundation">Theoretical Foundation</h2>
+<p>To estimate π using randomness, we consider a geometric probability setup.</p>
+<ul>
+<li>Draw a <em>square</em> of side length 2, centered at the origin. This square spans from <span class="arithmatex">\(-1\)</span> to <span class="arithmatex">\(1\)</span> along both the x and y axes.</li>
+<li>Inside this square, draw a <em>unit circle</em> (radius <span class="arithmatex">\(r = 1\)</span>) also centered at the origin.</li>
+</ul>
+<p>Now we generate random points <span class="arithmatex">\((x, y)\)</span>, where <span class="arithmatex">\(x, y \in [-1, 1]\)</span>, such that the points are uniformly distributed across the square.</p>
+<h3 id="geometric-areas">Geometric Areas:</h3>
+<ul>
+<li>
+<p><em>Area of the square</em>:<br/>
+<span class="arithmatex">\(<span class="arithmatex">\(A_{\text{square}} = 2 \times 2 = 4\)</span>\)</span></p>
+</li>
+<li>
+<p><em>Area of the unit circle</em>:<br/>
+<span class="arithmatex">\(<span class="arithmatex">\(A_{\text{circle}} = \pi \times r^2 = \pi \times 1^2 = \pi\)</span>\)</span></p>
+</li>
+</ul>
+<p>The <em>probability</em> that a randomly chosen point lands <em>inside the circle</em> is given by the ratio of the areas:</p>
+<div class="arithmatex">\[
+P(\text{inside circle}) = \frac{A_{\text{circle}}}{A_{\text{square}}} = \frac{\pi}{4}
+\]</div>
+<p>Therefore, if we generate a large number of random points and count how many fall inside the circle, we expect:</p>
+<div class="arithmatex">\[
+\frac{\text{Points inside circle}}{\text{Total points}} \approx \frac{\pi}{4}
+\]</div>
+<hr/>
+<h2 id="derivation-of-the-estimation-formula">Derivation of the Estimation Formula</h2>
+<p>Given the theoretical relationship:</p>
+<div class="arithmatex">\[
+\frac{\text{Points inside circle}}{\text{Total points}} \approx \frac{\pi}{4}
+\]</div>
+<p>We can solve for <span class="arithmatex">\(\pi\)</span> to get an estimate:</p>
+<div class="arithmatex">\[
+\pi \approx 4 \times \frac{\text{Points inside circle}}{\text{Total points}}
+\]</div>
+<p>This is the core <em>Monte Carlo estimation formula</em> for π.</p>
+<hr/>
+<h2 id="how-to-check-if-a-point-is-inside-the-circle">How to Check if a Point is Inside the Circle</h2>
+<p>For any randomly generated point <span class="arithmatex">\((x, y)\)</span>, it lies <em>inside the unit circle</em> if:</p>
+<div class="arithmatex">\[
+x^2 + y^2 \leq 1
+\]</div>
+<p>Thus, for each point, compute <span class="arithmatex">\(x^2 + y^2\)</span>.<br/>
+If the result is less than or equal to 1, the point is counted as <em>inside the circle</em>.</p>
+<hr/>
+<h2 id="monte-carlo-simulation-to-estimate">Monte Carlo Simulation to Estimate π</h2>
+<p>In this simulation, we:</p>
+<ol>
+<li>Generate <span class="arithmatex">\(N\)</span> random points <span class="arithmatex">\((x, y)\)</span> inside a square from <span class="arithmatex">\([-1, 1] \times [-1, 1]\)</span>.</li>
+<li>Count how many of them fall inside the unit circle using the condition <span class="arithmatex">\(x^2 + y^2 \leq 1\)</span>.</li>
+<li>Estimate π using the formula:</li>
+</ol>
+<div class="arithmatex">\[
+\pi \approx 4 \times \frac{\text{Points inside circle}}{\text{Total points}}
+\]</div>
+<p><img alt="image" src="stats2-1.png"/></p>
+<h2 id="visualization-of-monte-carlo-points">Visualization of Monte Carlo Points</h2>
+<p>To visually understand how the Monte Carlo method estimates π:</p>
+<ul>
+<li>We plot all randomly generated points <span class="arithmatex">\((x, y)\)</span> inside the square.</li>
+<li>Points <em>inside</em> the unit circle (<span class="arithmatex">\(x^2 + y^2 \leq 1\)</span>) are shown in <em>blue</em>.</li>
+<li>Points <em>outside</em> the circle are shown in <em>red</em>.</li>
+<li>The unit circle is inscribed within a square of side length 2, centered at the origin.</li>
+</ul>
+<p>This visualization helps us intuitively grasp how the area ratio approximates π.</p>
+<p><img alt="alt text" src="stats2-2.png"/></p>
+<h2 id="analysis-of-convergence-and-accuracy">Analysis of Convergence and Accuracy</h2>
+<p>Monte Carlo methods are inherently statistical, and their accuracy improves with the number of samples. In this task, we:</p>
+<ul>
+<li>Run simulations with increasing numbers of random points <span class="arithmatex">\(N\)</span></li>
+<li>Track how the estimate of <span class="arithmatex">\(\pi\)</span> converges</li>
+<li>Analyze the <em>convergence rate</em> and <em>computational considerations</em></li>
+</ul>
+<hr/>
+<h3 id="convergence-behavior">Convergence Behavior</h3>
+<p>Let <span class="arithmatex">\(E(N)\)</span> denote the estimate of <span class="arithmatex">\(\pi\)</span> after generating <span class="arithmatex">\(N\)</span> random points. According to the <em>Law of Large Numbers</em>, we expect:</p>
+<div class="arithmatex">\[
+\lim_{N \to \infty} E(N) = \pi
+\]</div>
+<p>The standard error (typical deviation from the true value) decreases proportionally to:</p>
+<div class="arithmatex">\[
+\text{Error} \propto \frac{1}{\sqrt{N}}
+\]</div>
+<p>This means to reduce the error by a factor of 10, we must increase the number of points by a factor of 100.</p>
+<hr/>
+<h3 id="computational-considerations">Computational Considerations</h3>
+<ul>
+<li><em>Pros</em>:</li>
+<li>Simple and easy to implement</li>
+<li>Scales well with parallel computing</li>
+<li>
+<p>Works even when geometric integration is hard</p>
+</li>
+<li>
+<p><em>Cons</em>:</p>
+</li>
+<li>Convergence is slow (<span class="arithmatex">\(\mathcal{O}(1/\sqrt{N})\)</span>)</li>
+<li>Needs a very large <span class="arithmatex">\(N\)</span> for high precision (e.g., millions of points)</li>
+</ul>
+<hr/>
+<h3 id="simulation-estimate-convergence-plot">Simulation: Estimate Convergence Plot</h3>
+<p>We simulate π estimation for a range of <span class="arithmatex">\(N\)</span> values and plot the results to visualize convergence.</p>
+<p><img alt="alt text" src="stats2-3.png"/></p>
+<h1 id="estimating-using-buffons-needle">Estimating π Using Buffon’s Needle</h1>
+<h2 id="theoretical-foundation_1">Theoretical Foundation</h2>
+<hr/>
+<h3 id="buffons-needle-problem">Buffon’s Needle Problem</h3>
+<p>Buffon’s Needle is a famous <em>geometric probability</em> problem, first posed by French mathematician <em>Georges-Louis Leclerc, Comte de Buffon</em> in the 18th century.</p>
+<p>The setup is as follows:</p>
+<ul>
+<li>A floor has equally spaced <em>parallel lines</em> that are a distance <span class="arithmatex">\(d\)</span> apart.</li>
+<li>A needle of length <span class="arithmatex">\(\ell\)</span> is <em>randomly dropped</em> onto the floor.</li>
+<li>The goal is to find the <em>probability</em> that the needle <em>crosses</em> one of the lines.</li>
+</ul>
+<p>Surprisingly, this probability depends on <em>π, and can be used to </em><em>estimate</em> its value.</p>
+<hr/>
+<h3 id="assumptions">Assumptions</h3>
+<ul>
+<li>The needle’s length <span class="arithmatex">\(\ell\)</span> must satisfy <span class="arithmatex">\(\ell \leq d\)</span>.</li>
+<li>The needle is dropped with <em>uniformly random orientation and position</em>.</li>
+<li>Let:</li>
+<li><span class="arithmatex">\(N\)</span> = total number of needle drops (throws)</li>
+<li><span class="arithmatex">\(C\)</span> = number of times the needle crosses a line</li>
+</ul>
+<hr/>
+<h3 id="geometric-probability-derivation">Geometric Probability Derivation</h3>
+<p>Let:</p>
+<ul>
+<li><span class="arithmatex">\(\theta\)</span> be the acute angle between the needle and the lines, uniformly distributed in <span class="arithmatex">\([0, \frac{\pi}{2}]\)</span></li>
+<li><span class="arithmatex">\(x\)</span> be the distance from the center of the needle to the nearest line, uniformly in <span class="arithmatex">\([0, \frac{d}{2}]\)</span></li>
+</ul>
+<p>A crossing occurs if <em>half the needle projects past the nearest line</em>, i.e.:</p>
+<div class="arithmatex">\[
+x \leq \frac{\ell}{2} \sin\theta
+\]</div>
+<p>The probability of this happening (over all possible orientations and positions) is given by integrating over all valid <span class="arithmatex">\((x, \theta)\)</span> pairs:</p>
+<div class="arithmatex">\[
+P(\text{cross}) = \frac{2\ell}{\pi d}
+\]</div>
+<hr/>
+<h3 id="estimating-using-experimental-data">Estimating π Using Experimental Data</h3>
+<p>If we simulate (or conduct) <span class="arithmatex">\(N\)</span> throws and observe <span class="arithmatex">\(C\)</span> crossings, we equate the empirical probability with the theoretical one:</p>
+<div class="arithmatex">\[
+\frac{C}{N} \approx \frac{2\ell}{\pi d}
+\]</div>
+<p>Solving for <span class="arithmatex">\(\pi\)</span>:</p>
+<div class="arithmatex">\[
+\pi \approx \frac{2\ell N}{dC}
+\]</div>
+<hr/>
+<h3 id="final-formula-for-estimating">Final Formula for Estimating π</h3>
+<p>Let:</p>
+<ul>
+<li><span class="arithmatex">\(\ell\)</span> = length of the needle</li>
+<li><span class="arithmatex">\(d\)</span> = distance between lines</li>
+<li><span class="arithmatex">\(N\)</span> = number of needle throws</li>
+<li><span class="arithmatex">\(C\)</span> = number of times the needle crosses a line</li>
+</ul>
+<p>Then:</p>
+<div class="arithmatex">\[
+\boxed{
+\pi \approx \frac{2 \cdot \ell \cdot N}{d \cdot C}
+}
+\]</div>
+<hr/>
+<p>This method is both a <em>beautiful illustration of geometric probability</em> and a <em>practical Monte Carlo technique</em> to estimate π.</p>
+<h3 id="simulation-convergence-of-buffons-needle-estimation">Simulation: Convergence of Buffon’s Needle π Estimation</h3>
+<p><img alt="image" src="stats2-4.png"/></p>
+<h3 id="buffons-needle-simulation">Buffon's Needle Simulation:</h3>
+<p><img alt="alt text" src="stats2-6.png"/></p>
+<h3 id="convergence-comparison-buffons-needle-vs-circle-based-monte-carlo">Convergence Comparison: Buffon's Needle vs Circle-Based Monte Carlo</h3>
+<p><img alt="alt text" src="stats2-5.png"/></p>
+<h3 id="the-convergence-analysis-compares-the-accuracy-of-estimating-using">The convergence analysis compares the accuracy of estimating π using:</h3>
+<ul>
+<li>
+<p>Buffon's Needle Method: The red curve shows how the estimate improves as the number of needle drops increases.</p>
+</li>
+<li>
+<p>Circle-Based Monte Carlo Method: The green curve represents the convergence for random points within a unit square.</p>
+</li>
+</ul>
+<h3 id="observations">Observations:</h3>
+<ul>
+<li>
+<p>Both methods converge to the true value of π (blue dashed line) as the number of trials increases.</p>
+</li>
+<li>
+<p>The circle-based approach exhibits a faster and smoother convergence, likely due to its simpler geometry and higher probability of inclusion for random points.</p>
+</li>
+<li>
+<p>The needle-based method converges more slowly, reflecting the rarity of crossing events in certain setups (e.g., small needle-to-line ratios).</p>
+</li>
+</ul>
+<p>This comparison highlights the efficiency of the circle-based method for larger trial counts while showing the conceptual elegance of Buffon’s Needle for demonstrating geometric probability.</p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
