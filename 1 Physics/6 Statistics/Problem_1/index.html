@@ -86,6 +86,26 @@
 <ul class="current">
 <li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 1</a>
 <ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="#simulating-population-distributions">Simulating Population Distributions</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#parameter-exploration">Parameter Exploration</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#1-rate-of-convergence-to-normality">1. Rate of Convergence to Normality</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#2-variance-and-dispersion">2. Variance and Dispersion</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#real-world-applications">Real-World Applications</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#1-estimating-population-characteristics">1. Estimating Population Characteristics:</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#2-manufacturing-and-quality-control">2. Manufacturing and Quality Control:</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#3-finance-and-risk-modeling">3. Finance and Risk Modeling:</a>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Problem_2/">Problem 2</a>
@@ -174,6 +194,37 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
 <h1 id="problem-1">Problem 1</h1>
+<h3 id="simulating-population-distributions">Simulating Population Distributions</h3>
+<p>This approach enables us to observe how the sampling distribution of the mean increasingly resembles a normal distribution as sample size grows — a key concept behind the <em>Central Limit Theorem</em>.</p>
+<p><img alt="alt text" src="image.png"/></p>
+<hr/>
+<p><img alt="alt text" src="image-3.png"/></p>
+<hr/>
+<p><img alt="alt text" src="image-2.png"/></p>
+<hr/>
+<h2 id="parameter-exploration">Parameter Exploration</h2>
+<h3 id="1-rate-of-convergence-to-normality">1. <em>Rate of Convergence to Normality</em></h3>
+<p>Different population shapes (Uniform, Exponential, Binomial) require varying sample sizes before their sampling distributions resemble a normal distribution.</p>
+<p>We will employ visual tools (histograms, Q-Q plots) and statistical tests to analyze this.</p>
+<h3 id="2-variance-and-dispersion">2. <em>Variance and Dispersion</em></h3>
+<p>The spread (standard deviation) of the sampling distribution diminishes as the sample size increases.</p>
+<p>Theoretically, <span class="arithmatex">\(\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}\)</span>, where <span class="arithmatex">\(\sigma\)</span> is the population's standard deviation.</p>
+<p>We will empirically compare this theoretical formula with the observed dispersion of sample means.</p>
+<h2 id="real-world-applications">Real-World Applications</h2>
+<p>The Central Limit Theorem (CLT) isn't just theoretical — it has widespread practical relevance:</p>
+<h3 id="1-estimating-population-characteristics">1. <em>Estimating Population Characteristics:</em></h3>
+<p>In surveys or polls, it's often unfeasible to collect data from an entire population.</p>
+<p>By drawing random samples, the CLT ensures that the sample average is a dependable estimate of the population mean.</p>
+<p>This supports the use of confidence intervals and hypothesis testing.</p>
+<h3 id="2-manufacturing-and-quality-control">2. <em>Manufacturing and Quality Control:</em></h3>
+<p>Factories track product quality by sampling items from production lines.</p>
+<p>The CLT ensures that sample averages reflect the broader process, even when individual measurements fluctuate.</p>
+<p>This aids in identifying defects or anomalies early without inspecting every item.</p>
+<h3 id="3-finance-and-risk-modeling">3. <em>Finance and Risk Modeling:</em></h3>
+<p>Financial professionals assess asset returns and portfolio risk using averages of returns.</p>
+<p>The CLT makes it possible to model these aggregate returns as approximately normal, even if the individual returns are skewed or irregular.</p>
+<p>This enables tools like Value at Risk (VaR) and portfolio optimization.</p>
+<p>In each of these areas, the CLT provides a mathematical basis for making conclusions about large groups or systems using manageable samples.</p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
