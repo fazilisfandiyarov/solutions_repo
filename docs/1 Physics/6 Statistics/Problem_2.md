@@ -75,7 +75,7 @@ $$
 \pi \approx 4 \times \frac{\text{Points inside circle}}{\text{Total points}}
 $$
 
-![image](stats2-1.png)
+![image](z5.jpg)
 
 ## Visualization of Monte Carlo Points
 
@@ -88,7 +88,7 @@ To visually understand how the Monte Carlo method estimates π:
 
 This visualization helps us intuitively grasp how the area ratio approximates π.
 
-![alt text](stats2-2.png)
+![alt text](z2.jpg)
 
 ## Analysis of Convergence and Accuracy
 
@@ -134,7 +134,7 @@ This means to reduce the error by a factor of 10, we must increase the number of
 ### Simulation: Estimate Convergence Plot
 We simulate π estimation for a range of $N$ values and plot the results to visualize convergence.
 
-![alt text](stats2-3.png)
+![alt text](z3.jpg)
 
 # Estimating π Using Buffon’s Needle  
 ## Theoretical Foundation
@@ -225,15 +225,15 @@ This method is both a *beautiful illustration of geometric probability* and a *p
 
 ### Simulation: Convergence of Buffon’s Needle π Estimation
 
-![image](stats2-4.png)
+![image](z.jpg)
 
 ### Buffon's Needle Simulation:
 
-![alt text](stats2-6.png)
+![alt text](z6.jpg)
 
 ### Convergence Comparison: Buffon's Needle vs Circle-Based Monte Carlo
 
-![alt text](stats2-5.png)
+![alt text](z4.jpg)
 
 ### The convergence analysis compares the accuracy of estimating π using:
 
