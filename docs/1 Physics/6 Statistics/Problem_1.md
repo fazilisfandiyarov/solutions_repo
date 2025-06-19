@@ -4,15 +4,15 @@
 
 This approach enables us to observe how the sampling distribution of the mean increasingly resembles a normal distribution as sample size grows — a key concept behind the *Central Limit Theorem*.
 
-![alt text](image.png)
+![alt text](blm1.jpg)
 
 ---
 
-![alt text](image-3.png)
+![alt text](blm2.jpg)
 
 ---
 
-![alt text](image-2.png)
+![alt text](blm3.jpg)
 
 ---
 
