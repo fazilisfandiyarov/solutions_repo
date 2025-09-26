@@ -187,41 +187,41 @@
 <h3 id="governing-equations-of-motion">Governing Equations of Motion</h3>
 <p>To analyze the range of a projectile as a function of its angle of projection, we begin with Newton's second law and apply it to motion in two dimensions, under the influence of gravity and assuming no air resistance.</p>
 <p>Let:
-- &amp;&amp;v_0&amp;&amp; be the initial velocity,
-- &amp;&amp;\theta&amp;&amp; be the angle of projection with respect to the horizontal,
-- &amp;&amp;g&amp;&amp; be the acceleration due to gravity,
-- &amp;&amp;x(t)&amp;&amp; and &amp;&amp;y(t)&amp;&amp; be the horizontal and vertical positions as functions of time.</p>
+- <span class="arithmatex">\(v_0\)</span> be the initial velocity,
+- <span class="arithmatex">\(\theta\)</span> be the angle of projection with respect to the horizontal,
+- <span class="arithmatex">\(g\)</span> be the acceleration due to gravity,
+- <span class="arithmatex">\(x(t)\)</span> and <span class="arithmatex">\(y(t)\)</span> be the horizontal and vertical positions as functions of time.</p>
 <h4 id="1-horizontal-motion-x-direction">1. <strong>Horizontal Motion (x-direction)</strong></h4>
-<p>There is no acceleration in the horizontal direction:
-$$
+<p>There is no acceleration in the horizontal direction:</p>
+<div class="arithmatex">\[
 \frac{d^2x}{dt^2} = 0 \Rightarrow \frac{dx}{dt} = v_0 \cos(\theta) \Rightarrow x(t) = v_0 \cos(\theta) t
-$$</p>
+\]</div>
 <h4 id="2-vertical-motion-y-direction">2. <strong>Vertical Motion (y-direction)</strong></h4>
-<p>The only acceleration is due to gravity:
-$$
+<p>The only acceleration is due to gravity:</p>
+<div class="arithmatex">\[
 \frac{d^2y}{dt^2} = -g \Rightarrow \frac{dy}{dt} = v_0 \sin(\theta) - gt \Rightarrow y(t) = v_0 \sin(\theta) t - \frac{1}{2}gt^2
-$$</p>
+\]</div>
 <h3 id="time-of-flight-and-range">Time of Flight and Range</h3>
-<p>To find the <strong>range</strong> &amp;&amp;R&amp;&amp;, we determine the total time of flight by setting &amp;&amp;y(t) = 0&amp;&amp; (assuming launch and landing at the same height):</p>
+<p>To find the <strong>range</strong> <span class="arithmatex">\(R\)</span>, we determine the total time of flight by setting <span class="arithmatex">\(y(t) = 0\)</span> (assuming launch and landing at the same height):</p>
 <div class="arithmatex">\[
 v_0 \sin(\theta) t - \frac{1}{2}gt^2 = 0 \Rightarrow t (v_0 \sin(\theta) - \frac{1}{2}gt) = 0
 \]</div>
-<p>Solving for &amp;&amp;t \neq 0&amp;&amp;:
-$$
+<p>Solving for <span class="arithmatex">\(t \neq 0\)</span>:</p>
+<div class="arithmatex">\[
 t = \frac{2v_0 \sin(\theta)}{g}
-$$</p>
-<p>Now, substitute into &amp;&amp;x(t)&amp;&amp; to get the range &amp;&amp;R&amp;&amp;:</p>
+\]</div>
+<p>Now, substitute into <span class="arithmatex">\(x(t)\)</span> to get the range <span class="arithmatex">\(R\)</span>:</p>
 <div class="arithmatex">\[
 R = v_0 \cos(\theta) \cdot \frac{2v_0 \sin(\theta)}{g} = \frac{v_0^2 \sin(2\theta)}{g}
 \]</div>
 <h3 id="influence-of-initial-conditions">Influence of Initial Conditions</h3>
 <p>This equation illustrates that:
-- The <strong>initial speed</strong> &amp;&amp;v_0&amp;&amp; increases the range quadratically.
-- The <strong>angle</strong> &amp;&amp;\theta&amp;&amp; affects the range via the &amp;&amp;\sin(2\theta)&amp;&amp; function, with a maximum at &amp;&amp;\theta = 45^\circ&amp;&amp;.
-- The <strong>gravitational acceleration</strong> &amp;&amp;g&amp;&amp; inversely affects the range.</p>
+- The <strong>initial speed</strong> <span class="arithmatex">\(v_0\)</span> increases the range quadratically.
+- The <strong>angle</strong> <span class="arithmatex">\(\theta\)</span> affects the range via the <span class="arithmatex">\(\sin(2\theta)\)</span> function, with a maximum at <span class="arithmatex">\(\theta = 45^\circ\)</span>.
+- The <strong>gravitational acceleration</strong> <span class="arithmatex">\(g\)</span> inversely affects the range.</p>
 <p>Different combinations of these parameters produce a <strong>family of trajectories</strong>, all governed by the same set of physical laws. The sensitivity to initial conditions makes projectile motion a powerful model for understanding both ideal and real-world scenarios.</p>
-<h1 id="2-analysis-of-the-range">2. Analysis of the Range</h1>
-<h2 id="horizontal-range-and-angle-of-projection">Horizontal Range and Angle of Projection</h2>
+<h2 id="analysis-of-the-range">Analysis of the Range</h2>
+<h3 id="horizontal-range-and-angle-of-projection">Horizontal Range and Angle of Projection</h3>
 <p>The <strong>horizontal range</strong> <span class="arithmatex">\(R\)</span> of a projectile is the horizontal distance it travels before returning to the same vertical level from which it was launched (i.e., when <span class="arithmatex">\(y = y_0\)</span>).</p>
 <p>For a projectile launched from ground level (<span class="arithmatex">\(y_0 = 0\)</span>), the total time of flight <span class="arithmatex">\(T\)</span> is given by:</p>
 <div class="arithmatex">\[
@@ -242,9 +242,8 @@ R = \frac{v_0^2 \sin(2\theta)}{g}
 <li><span class="arithmatex">\(R(30^\circ) = R(60^\circ)\)</span></li>
 <li><span class="arithmatex">\(R(10^\circ) = R(80^\circ)\)</span>, etc.</li>
 </ul>
-<hr/>
-<h2 id="influence-of-other-parameters">Influence of Other Parameters</h2>
-<h3 id="1-initial-velocity-v_0">1. <strong>Initial Velocity <span class="arithmatex">\(v_0\)</span></strong></h3>
+<h3 id="influence-of-other-parameters">Influence of Other Parameters</h3>
+<h4 id="1-initial-velocity-v_0">1. <strong>Initial Velocity <span class="arithmatex">\(v_0\)</span></strong></h4>
 <p>From the range equation:</p>
 <div class="arithmatex">\[
 R = \frac{v_0^2 \sin(2\theta)}{g}
@@ -254,7 +253,7 @@ R = \frac{v_0^2 \sin(2\theta)}{g}
 <li>Doubling the velocity <strong>quadruples</strong> the range.</li>
 <li>Higher velocity = longer flight time and faster horizontal travel.</li>
 </ul>
-<h3 id="2-gravitational-acceleration-g">2. <strong>Gravitational Acceleration <span class="arithmatex">\(g\)</span></strong></h3>
+<h4 id="2-gravitational-acceleration-g">2. <strong>Gravitational Acceleration <span class="arithmatex">\(g\)</span></strong></h4>
 <ul>
 <li>The range is <strong>inversely proportional</strong> to <span class="arithmatex">\(g\)</span>.</li>
 <li>On planets with weaker gravity (e.g., the Moon), the same projectile would travel much farther.</li>
@@ -262,8 +261,7 @@ R = \frac{v_0^2 \sin(2\theta)}{g}
 <li>On Earth: <span class="arithmatex">\(g \approx 9.8\, \text{m/s}^2\)</span></li>
 <li>On Moon: <span class="arithmatex">\(g \approx 1.6\, \text{m/s}^2 \Rightarrow R_{\text{moon}} \approx 6.1 \times R_{\text{earth}}\)</span></li>
 </ul>
-<hr/>
-<h2 id="summary">Summary</h2>
+<h3 id="summary">Summary</h3>
 <ul>
 <li>The range depends on the angle of projection via the term <span class="arithmatex">\(\sin(2\theta)\)</span>.</li>
 <li>It is <strong>maximum at 45°</strong> and symmetric around it.</li>
@@ -271,14 +269,13 @@ R = \frac{v_0^2 \sin(2\theta)}{g}
 <li>Decreasing <strong>gravity</strong> also increases range.</li>
 </ul>
 <p>These insights show how adjusting launch conditions can precisely control the motion of a projectile — a principle used in everything from sports to space travel.</p>
-<h3 id="plot-showing-how-the-range-varies-with-the-angle-of-projection-as-expected-the-range-is-maximized-at-45-and-it-symmetrically-decreases-for-angles-above-and-below-this-value">Plot showing how the range varies with the angle of projection. As expected, the range is maximized at 45°, and it symmetrically decreases for angles above and below this value</h3>
-<p><img alt="image" src="../ProjectileRange.png"/></p>
-<h3 id="this-graph-shows-motion-trajectories-for-various-launch-angles-15-30-45-60-75-at-a-fixed-initial-velocity-of-50-ms">This graph shows motion trajectories for various launch angles (15°, 30°, 45°, 60°, 75°) at a fixed initial velocity of 50 m/s.</h3>
-<p><img alt="image" src="../efectofinitialvelocity.png"/></p>
-<h1 id="3-practical-applications">3. Practical Applications</h1>
-<h2 id="adapting-the-model-for-real-world-situations">Adapting the Model for Real-World Situations</h2>
-<p>While the ideal projectile motion model assumes flat terrain and no air resistance, real-world scenarios often deviate from these assumptions. Let’s explore how the basic model can be adapted to accommodate more complex conditions.</p>
-<hr/>
+<p><img alt="Range vs Angle Plot" src="../ProjectileRange.png"/>
+<em>Şekil 1: Menzilin açıya bağlı değişimi. 45°'de maksimum menzil görülmektedir.</em></p>
+<p><img alt="Trajectory Plot" src="../efectofinitialvelocity.png"/>
+<em>Şekil 2: Farklı açılarda fırlatma hareketi yörüngeleri (15°, 30°, 45°, 60°, 75°)</em></p>
+<h2 id="practical-applications">Practical Applications</h2>
+<h3 id="adapting-the-model-for-real-world-situations">Adapting the Model for Real-World Situations</h3>
+<p>While the ideal projectile motion model assumes flat terrain and no air resistance, real-world scenarios often deviate from these assumptions. Let's explore how the basic model can be adapted to accommodate more complex conditions.</p>
 <h3 id="1-uneven-terrain">1. <strong>Uneven Terrain</strong></h3>
 <p>In real life, projectiles rarely land on the same level from which they were launched. This is particularly relevant in applications like:</p>
 <ul>
@@ -300,7 +297,6 @@ y(t) = y_0 + v_0 \sin \theta \cdot t - \frac{1}{2} g t^2 = h
 R = v_0 \cos \theta \cdot t
 \]</div>
 <p>Thus, the <strong>range now depends on both launch and landing heights</strong>.</p>
-<hr/>
 <h3 id="2-air-resistance">2. <strong>Air Resistance</strong></h3>
 <p>Air resistance (drag) significantly affects projectile motion, especially at high speeds or over long distances.</p>
 <h4 id="key-effects-of-air-resistance">Key Effects of Air Resistance:</h4>
@@ -324,7 +320,6 @@ m \frac{dv}{dt} = -mg - kv^2
 <li>Sports involving fast projectiles (baseball, tennis)</li>
 <li>Engineering of drones, rockets, and reentry vehicles</li>
 </ul>
-<hr/>
 <h3 id="3-other-realistic-factors">3. <strong>Other Realistic Factors</strong></h3>
 <ul>
 <li><strong>Wind</strong>: Adds a directional force component, shifting the trajectory.</li>
@@ -332,8 +327,7 @@ m \frac{dv}{dt} = -mg - kv^2
 <li><strong>Planetary Gravity</strong>: Varying <span class="arithmatex">\(g\)</span> affects motion in space missions or planetary exploration.</li>
 <li><strong>Coriolis Effect</strong>: For long-range projectiles on Earth, Earth's rotation causes a noticeable deflection.</li>
 </ul>
-<hr/>
-<h2 id="conclusion">Conclusion</h2>
+<h3 id="conclusion">Conclusion</h3>
 <p>By modifying initial assumptions, the basic projectile model can be tailored to handle a wide range of real-world complexities. These adaptations are essential in fields like:</p>
 <ul>
 <li><strong>Military engineering</strong></li>
@@ -342,10 +336,10 @@ m \frac{dv}{dt} = -mg - kv^2
 <li><strong>Robotics and automation</strong></li>
 </ul>
 <p>Each modification increases realism at the cost of mathematical simplicity, often requiring computational tools for accurate simulation.</p>
-<h3 id="effect-of-initial-velocity-on-range-higher-initial-velocity-significantly-increases-the-range-following-a-quadratic-relationship">Effect of Initial Velocity on Range: Higher initial velocity significantly increases the range, following a quadratic relationship</h3>
-<p><img alt="image" src="../efefctofinitalvelocity2.png"/></p>
-<h3 id="effect-of-gravity-on-range-weaker-gravity-eg-on-the-moon-allows-for-much-longer-travel-distances-while-stronger-gravity-eg-on-jupiter-greatly-reduces-the-range">Effect of Gravity on Range: Weaker gravity (e.g., on the Moon) allows for much longer travel distances, while stronger gravity (e.g., on Jupiter) greatly reduces the range.</h3>
-<p><img alt="image" src="../efect%20of%20gravity%20on%20range.png"/></p>
+<p><img alt="Velocity Effect" src="../efefctofinitalvelocity2.png"/>
+<em>Şekil 3: İlk hızın menzil üzerindeki etkisi - daha yüksek hızlar menzili önemli ölçüde artırır</em></p>
+<p><img alt="Gravity Effect" src="../efect%20of%20gravity%20on%20range.png"/>
+<em>Şekil 4: Yerçekiminin menzil üzerindeki etkisi - daha zayıf yerçekimi daha uzun menzillere izin verir</em></p>
 <p><a href="https://colab.research.google.com/drive/12NE06aE-DRrZT9HjrQ9rJTGDBE15eayv?usp=sharing">MyColab</a></p>
 </div>
 </div><footer>
