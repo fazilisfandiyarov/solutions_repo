@@ -118,10 +118,10 @@ $$
 These insights show how adjusting launch conditions can precisely control the motion of a projectile — a principle used in everything from sports to space travel.
 
 ![Range vs Angle Plot](ProjectileRange.png)
-*Şekil 1: Menzilin açıya bağlı değişimi. 45°'de maksimum menzil görülmektedir.*
+*Figure 1: Range as a function of projection angle. Maximum range is achieved at 45°.*
 
 ![Trajectory Plot](efectofinitialvelocity.png)
-*Şekil 2: Farklı açılarda fırlatma hareketi yörüngeleri (15°, 30°, 45°, 60°, 75°)*
+*Figure 2: Motion trajectories for different launch angles (15°, 30°, 45°, 60°, 75°)*
 
 ## Practical Applications
 
@@ -208,9 +208,9 @@ By modifying initial assumptions, the basic projectile model can be tailored to 
 Each modification increases realism at the cost of mathematical simplicity, often requiring computational tools for accurate simulation.
 
 ![Velocity Effect](efefctofinitalvelocity2.png)
-*Şekil 3: İlk hızın menzil üzerindeki etkisi - daha yüksek hızlar menzili önemli ölçüde artırır*
+*Figure 3: Effect of initial velocity on range - higher velocities significantly increase the range*
 
 ![Gravity Effect](efect%20of%20gravity%20on%20range.png)
-*Şekil 4: Yerçekiminin menzil üzerindeki etkisi - daha zayıf yerçekimi daha uzun menzillere izin verir*
+*Figure 4: Effect of gravity on range - weaker gravity allows for longer travel distances*
 
 [MyColab](https://colab.research.google.com/drive/12NE06aE-DRrZT9HjrQ9rJTGDBE15eayv?usp=sharing)
