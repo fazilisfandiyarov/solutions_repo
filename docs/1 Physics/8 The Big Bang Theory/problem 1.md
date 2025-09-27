@@ -60,18 +60,7 @@ $$
 - **Anisotropies**: Tiny fluctuations reveal density variations
 
 #### CMB Key Measurements
-```python
-import numpy as np
-import matplotlib.pyplot as plt
 
-# CMB Blackbody Spectrum
-def planck_law(wavelength, T=2.725):
-    h = 6.626e-34  # Planck's constant
-    c = 3.0e8      # Speed of light
-    k = 1.381e-23  # Boltzmann constant
-    
-    wavelength = wavelength * 1e-6  # Convert to meters
-    return (2*h*c**2)/(wavelength**5) * 1/(np.exp((h*c)/(wavelength*k*T)) - 1)
 
 # Generate CMB spectrum
 ![asd](download.png)
