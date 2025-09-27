@@ -74,4 +74,4 @@ def planck_law(wavelength, T=2.725):
     return (2*h*c**2)/(wavelength**5) * 1/(np.exp((h*c)/(wavelength*k*T)) - 1)
 
 # Generate CMB spectrum
-![asd] (download.png)
+![asd](download.png)
