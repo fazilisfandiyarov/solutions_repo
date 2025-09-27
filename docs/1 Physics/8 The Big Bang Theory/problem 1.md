@@ -74,13 +74,4 @@ def planck_law(wavelength, T=2.725):
     return (2*h*c**2)/(wavelength**5) * 1/(np.exp((h*c)/(wavelength*k*T)) - 1)
 
 # Generate CMB spectrum
-wavelengths = np.linspace(0.1, 10, 1000)  # mm to cm
-intensity = planck_law(wavelengths)
-
-plt.figure(figsize=(10, 6))
-plt.plot(wavelengths, intensity)
-plt.xlabel('Wavelength (mm)')
-plt.ylabel('Spectral Radiance')
-plt.title('Cosmic Microwave Background Spectrum (T = 2.725 K)')
-plt.grid(True)
-plt.show()
+![asd] (download.png)
