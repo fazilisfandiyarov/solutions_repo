@@ -220,7 +220,4 @@ Where:
 
 ### 9.1. HR Diagram Components
 
-The HR diagram plots stellar luminosity against temperature, revealing distinct regions:
-
-```python
 ![asd](download.png)
