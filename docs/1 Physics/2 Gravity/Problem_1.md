@@ -112,18 +112,7 @@ This overall reaction actually occurs through several intermediate steps:
 
 1. # Proton-Proton Fusion Reaction
 
-$$ p + p \rightarrow ^2H + e^+ + \nu_e $$
-
-**First step of proton-proton chain reaction**  
-**Weak interaction process**  
-**Energy released: 1.44 MeV**  
-**Deuterium production**  
-**Solar neutrino source**  
-**Rate-limiting step in stellar fusion**  
-**Requires quantum tunneling**  
-**Occurs in stellar cores**  
-**Main sequence energy production**  
-**Fundamental stellar process**
+1. $$ p + p \rightarrow ^2H + e^+ + \nu_e $$
 2. \( p + ^2H \rightarrow ^3He + \gamma \)
 3. \( ^3He + ^3He \rightarrow ^4He + 2p \)
 
@@ -251,11 +240,7 @@ The main sequence is the longest stage in a star's life, where it burns hydrogen
 
 $$ \frac{dP}{dr} = -\rho g $$
 
-**Fundamental stellar structure equation**  **Pressure gradient force balances gravity**  **Spherical symmetry assumption**  
-**Local gravitational acceleration**  **Mass continuity relation**  
-**Stellar stability condition**  **Applies to main sequence stars**  
-**White dwarf support mechanism**  **Planetary atmosphere modeling**  
-**Fluid mechanics foundation**
+
 - Energy generation balances gravitational contraction
 - Position on HR diagram depends on mass
 - Temperature and pressure in core sustain nuclear fusion
@@ -266,11 +251,7 @@ $$ \frac{dP}{dr} = -\rho g $$
 
 $$ \frac{L}{L_\odot} \approx \left(\frac{M}{M_\odot}\right)^{3.5} $$
 
-**Main sequence stars relation**  **Empirical power law scaling**  
-**Steep mass dependence**  **Nuclear fusion rate correlation**  
-**Stellar lifetime determination**  **Exponent varies with mass range**  
-**Core temperature scaling**  **Pressure-temperature relation**  
-**Observational Hertzsprung-Russell fit**  **Stellar evolution modeling**
+
 
 Where:
 - \(L\) is luminosity
@@ -279,9 +260,10 @@ Where:
 
 ### 4.3. Main Sequence Lifetime
 
-`\[
-\tau_{MS} \approx 10^{10} \text{ years} \times \left(\frac{M}{M_\odot}\right)^{-2.5}
-\]`
+# Main Sequence Lifetime
+
+$$ \tau_{MS} \approx 10^{10} \text{ years} \times \left(\frac{M}{M_\odot}\right)^{-2.5} $$
+
 
 ## 5. Evolution of Low-Mass Stars (M < 8M⊙)
 
@@ -308,9 +290,11 @@ For stars ~0.8-2.0 M⊙:
 - White dwarf remnant
 
 **White dwarf mass-radius relation:**
-`\[
-R \propto M^{-1/3}
-\]`
+# White Dwarf Mass-Radius Relation
+
+$$ R \propto M^{-1/3} $$
+
+
 
 ## 6. Evolution of High-Mass Stars (M > 8M⊙)
 
@@ -336,9 +320,11 @@ Massive stars evolve rapidly through multiple burning stages:
 - Shock wave propagates outward
 
 **Energy released:**
-`\[
-E_{SN} \approx 10^{46} \text{ J} \approx 10^{53} \text{ erg}
-\]`
+# Supernova Energy Release
+
+$$ E_{SN} \approx 10^{46} \text{ J} \approx 10^{53} \text{ erg} $$
+
+
 
 ## 7. Importance of Supernovae for Element Distribution
 
@@ -367,9 +353,11 @@ Supernovae are primary sources for:
 - Supported by electron degeneracy pressure
 
 **Chandrasekhar limit:**
-`\[
-M_{Ch} \approx 1.4 M_\odot
-\]`
+# Chandrasekhar Limit
+
+$$ M_{Ch} \approx 1.4 M_\odot $$
+
+
 
 ### 8.2. Neutron Stars
 
@@ -386,9 +374,11 @@ M_{Ch} \approx 1.4 M_\odot
 **Form when remnant mass exceeds Tolman-Oppenheimer-Volkoff limit (~3 M⊙)**
 
 **Schwarzschild radius:**
-`\[
-R_s = \frac{2GM}{c^2}
-\]`
+# Schwarzschild Radius
+
+$$ R_s = \frac{2GM}{c^2} $$
+
+
 
 Where:
 - \(G\) is gravitational constant
