@@ -247,7 +247,20 @@ Two electron neutrinos are released per cycle via beta-plus decays.
 
 The main sequence is the longest stage in a star's life, where it burns hydrogen in its core. During this phase:
 
-- Stars maintain hydrostatic equilibrium: `\( \frac{dP}{dr} = -\rho g \)`
+- Stars maintain hydrostatic equilibrium: # Hydrostatic Equilibrium Equation
+
+$$ \frac{dP}{dr} = -\rho g $$
+
+**Fundamental stellar structure equation**  
+**Pressure gradient force balances gravity**  
+**Spherical symmetry assumption**  
+**Local gravitational acceleration**  
+**Mass continuity relation**  
+**Stellar stability condition**  
+**Applies to main sequence stars**  
+**White dwarf support mechanism**  
+**Planetary atmosphere modeling**  
+**Fluid mechanics foundation**
 - Energy generation balances gravitational contraction
 - Position on HR diagram depends on mass
 - Temperature and pressure in core sustain nuclear fusion
