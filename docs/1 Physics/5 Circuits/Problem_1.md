@@ -43,29 +43,10 @@ Given a circuit graph \( G = (V, E) \):
 
 ### ⚙️ Pseudocode
 
-```python
-function simplify_circuit(graph, source, target):
-    while graph has more than 2 nodes:
-        for each node v in graph:
-            if v has degree 2 and not in [source, target]:
-                # Series reduction
-                u, w = neighbors of v
-                R1 = resistance(u, v)
-                R2 = resistance(v, w)
-                R_eq = R1 + R2
-                remove v and its edges
-                add edge (u, w) with resistance R_eq
+![asd](download1.png)
+![asd](download2.png)
+![asd](download.png)
 
-        for each pair of nodes (u, v):
-            if multiple edges exist between u and v:
-                # Parallel reduction
-                resistances = [R1, R2, ..., Rn]
-                R_eq = 1 / sum(1/R for R in resistances)
-                remove all parallel edges
-                add edge (u, v) with resistance R_eq
-
-    return resistance between source and target
-```
 
 ---
 
