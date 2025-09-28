@@ -66,6 +66,18 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="#formul">Formül:</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#acklama">Açıklama:</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#degiskenler">Değişkenler:</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#sabit-degerler">Sabit Değerler:</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#ornek-hesaplama">Örnek Hesaplama:</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#fiziksel-onem">Fiziksel Önem:</a>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#3-thermonuclear-processes-in-stellar-cores">3. Thermonuclear Processes in Stellar Cores</a>
 <ul>
 <li class="toctree-l4"><a class="reference internal" href="#31-types-of-thermonuclear-reactions">3.1. Types of Thermonuclear Reactions</a>
@@ -268,18 +280,59 @@
 <li><strong>Molecular Cloud Collapse</strong></li>
 </ol>
 <p>The free-fall time for gravitational collapse is given by:
-   <code>\[
-   t_{ff} = \sqrt{\frac{3\pi}{32G\rho}}
-   \]</code>
-   Where:
-   - <span class="arithmatex">\(t_{ff}\)</span> is the free-fall time
-   - <span class="arithmatex">\(G\)</span> is the gravitational constant (<span class="arithmatex">\(6.674 \times 10^{-11} \, \text{m}^3\text{kg}^{-1}\text{s}^{-2}\)</span>)
-   - <span class="arithmatex">\(\rho\)</span> is the density of the cloud</p>
-<ol>
-<li><strong>Protostar Formation</strong></li>
-<li>Core contraction and heating</li>
-<li>Onset of hydrostatic equilibrium: <code>\( \frac{dP}{dr} = -\frac{GM(r)\rho}{r^2} \)</code></li>
-</ol>
+   # Serbest Düşüş Zamanı (Free-Fall Time)</p>
+<h2 id="formul">Formül:</h2>
+<div class="arithmatex">\[ t_{ff} = \sqrt{\frac{3\pi}{32G\rho}} \]</div>
+<h2 id="acklama">Açıklama:</h2>
+<p>Bu formül, <strong>bir gaz bulutunun kendi yerçekimi altında çökmesi için gereken süreyi</strong> hesaplar. Astrofizikte yıldız oluşum süreçlerinin modellenmesinde kullanılır.</p>
+<h2 id="degiskenler">Değişkenler:</h2>
+<table>
+<thead>
+<tr>
+<th>Sembol</th>
+<th>Açıklama</th>
+<th>Birim</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\( t_{ff} \)</span></td>
+<td>Serbest düşüş zamanı</td>
+<td>saniye (s)</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( G \)</span></td>
+<td>Yerçekimi sabiti</td>
+<td><span class="arithmatex">\( m^3 kg^{-1} s^{-2} \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \rho \)</span></td>
+<td>Yoğunluk</td>
+<td><span class="arithmatex">\( kg/m^3 \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \pi \)</span></td>
+<td>Pi sayısı</td>
+<td>boyutsuz</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sabit-degerler">Sabit Değerler:</h2>
+<ul>
+<li><span class="arithmatex">\( G = 6.67430 \times 10^{-11} \, m^3 kg^{-1} s^{-2} \)</span></li>
+<li><span class="arithmatex">\( \pi \approx 3.14159 \)</span></li>
+</ul>
+<h2 id="ornek-hesaplama">Örnek Hesaplama:</h2>
+<p><strong>Moleküler bulut için:</strong>
+- Yoğunluk: <span class="arithmatex">\( \rho = 10^{-18} \, kg/m^3 \)</span></p>
+<p><strong>Hesaplama:</strong>
+$$ t_{ff} = \sqrt{\frac{3 \times 3.14159}{32 \times 6.67430 \times 10^{-11} \times 10^{-18}}} \approx 3.8 \times 10^{12} \, s \, (\approx 120,000 \, \text{yıl}) $$</p>
+<h2 id="fiziksel-onem">Fiziksel Önem:</h2>
+<ul>
+<li>Yıldız oluşum süreçlerinin zaman ölçeğini belirler</li>
+<li>Gaz bulutlarının kararlılık analizinde kullanılır</li>
+<li>Kozmik yapıların evrimini anlamaya yardımcı olur</li>
+</ul>
 <h2 id="3-thermonuclear-processes-in-stellar-cores">3. Thermonuclear Processes in Stellar Cores</h2>
 <h3 id="31-types-of-thermonuclear-reactions">3.1. Types of Thermonuclear Reactions</h3>
 <p><strong>Main sequence stars primarily use two processes:</strong></p>
