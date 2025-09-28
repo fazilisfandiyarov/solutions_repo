@@ -25,17 +25,40 @@ Stars form within relatively dense concentrations of interstellar gas and dust k
 1. **Molecular Cloud Collapse**
 
    The free-fall time for gravitational collapse is given by:
-   `\[
-   t_{ff} = \sqrt{\frac{3\pi}{32G\rho}}
-   \]`
-   Where:
-   - \(t_{ff}\) is the free-fall time
-   - \(G\) is the gravitational constant (\(6.674 \times 10^{-11} \, \text{m}^3\text{kg}^{-1}\text{s}^{-2}\))
-   - \(\rho\) is the density of the cloud
+   # Serbest Düşüş Zamanı (Free-Fall Time)
 
-2. **Protostar Formation**
-   - Core contraction and heating
-   - Onset of hydrostatic equilibrium: `\( \frac{dP}{dr} = -\frac{GM(r)\rho}{r^2} \)`
+## Formül:
+
+$$ t_{ff} = \sqrt{\frac{3\pi}{32G\rho}} $$
+
+## Açıklama:
+Bu formül, **bir gaz bulutunun kendi yerçekimi altında çökmesi için gereken süreyi** hesaplar. Astrofizikte yıldız oluşum süreçlerinin modellenmesinde kullanılır.
+
+## Değişkenler:
+
+| Sembol | Açıklama | Birim |
+|--------|----------|-------|
+| \( t_{ff} \) | Serbest düşüş zamanı | saniye (s) |
+| \( G \) | Yerçekimi sabiti | \( m^3 kg^{-1} s^{-2} \) |
+| \( \rho \) | Yoğunluk | \( kg/m^3 \) |
+| \( \pi \) | Pi sayısı | boyutsuz |
+
+## Sabit Değerler:
+- \( G = 6.67430 \times 10^{-11} \, m^3 kg^{-1} s^{-2} \)
+- \( \pi \approx 3.14159 \)
+
+## Örnek Hesaplama:
+
+**Moleküler bulut için:**
+- Yoğunluk: \( \rho = 10^{-18} \, kg/m^3 \)
+
+**Hesaplama:**
+$$ t_{ff} = \sqrt{\frac{3 \times 3.14159}{32 \times 6.67430 \times 10^{-11} \times 10^{-18}}} \approx 3.8 \times 10^{12} \, s \, (\approx 120,000 \, \text{yıl}) $$
+
+## Fiziksel Önem:
+- Yıldız oluşum süreçlerinin zaman ölçeğini belirler
+- Gaz bulutlarının kararlılık analizinde kullanılır
+- Kozmik yapıların evrimini anlamaya yardımcı olur
 
 ## 3. Thermonuclear Processes in Stellar Cores
 
