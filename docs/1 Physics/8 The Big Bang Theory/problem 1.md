@@ -6,6 +6,9 @@ Even more striking is that a galaxy's recession velocity (the amount of redshift
 
 The most fundamental inference of this law is that the universe is expanding in every direction and as a whole. This means that space itself is expanding. When we go back in time, we conclude that the universe was in an increasingly hotter and denser state.
 
+![dg](1.jpg)
+
+
 # 2. Galaxy Formation and Large-Scale Cosmic Structures
 
 As the universe expanded, gravity brought matter together to form structures.
@@ -15,6 +18,8 @@ The first step was the tiny density fluctuations visible in the Cosmic Microwave
 Over time, these dense regions grew around a gravitational scaffold primarily formed by dark matter. Visible baryonic matter (gas and dust) then collapsed into these dark matter halos, forming the first stars and galaxies.
 
 Galaxies also came together through gravity to form galaxy clusters and immense superclusters. Today, the universe has a "Cosmic Web" structure where galaxies are distributed along these vast, web-like structures.
+
+![dg](2.jpg)
 
 # 3. The Composition of the Universe (Baryonic Matter, Dark Matter, Dark Energy)
 
@@ -46,6 +51,8 @@ Throughout history, alternative models to the Big Bang have been proposed.
 
 **Oscillating Universe / Big Crunch:** This is the idea that the expansion of the universe would stop at some point and, under the effect of gravity, it would collapse back onto itself (Big Crunch), triggering a new Big Bang. However, since the discovery of dark energy shows that the expansion is accelerating, this scenario no longer seems likely.
 
+![df](5.jpg)
+
 # 6. Possible Scenarios for the Future of the Universe
 
 The ultimate fate of the universe depends on the properties of dark energy and the total energy density of the universe.
@@ -55,6 +62,8 @@ The ultimate fate of the universe depends on the properties of dark energy and t
 **Big Rip:** If the repulsive force of dark energy increases over time, at some point it could tear apart galaxies, stars, planets, atoms, and even the fabric of space-time.
 
 **Big Crunch:** As mentioned above, it is the scenario where the expansion reverses. Current data does not support this.
+
+![dg](6.jpg)
 
 # 7. The Main Assumptions of the Big Bang Theory
 
@@ -66,7 +75,7 @@ That all matter and energy in the universe emerged from this initial state.
 
 That the recession of galaxies from each other is a result of the expansion of space itself.
 
-![1234](7.jpg)
+![hdh](7.jpg)
 
 # 8. Description of the Early Stages of the Universe (Inflation, Primordial Nucleosynthesis)
 
@@ -80,8 +89,12 @@ That the recession of galaxies from each other is a result of the expansion of s
 
 **Cosmic Microwave Background Radiation (CMB):** The most important evidence for the Big Bang. When the universe was about 380,000 years old, it cooled down enough for atoms to form, and light (photons) began to travel freely. This first light is observed today as a microwave "afterglow" coming from all over the universe, at a temperature of 2.7 Kelvin (-270.45°C).
 
+![sh](9.jpg)
+
 # 10. The Nature and Importance of the Cosmic Microwave Background Radiation
 
 **Nature:** It is a fossil radiation remnant from the initial fireball of the Big Bang. As the universe expanded, the wavelength of this radiation stretched and its energy decreased, shifting into the microwave region today.
 
 **Importance:** The fact that the CMB is almost perfectly smooth, yet contains tiny temperature fluctuations (anisotropies), shows the density differences in the early universe. These fluctuations are the seeds of large structures like galaxies and galaxy clusters. Studying the CMB provides precise data about the age, composition, and geometry of the universe.
+
+![af](10.jpg)
