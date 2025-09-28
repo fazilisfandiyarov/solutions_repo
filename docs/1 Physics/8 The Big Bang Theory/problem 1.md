@@ -66,6 +66,8 @@ That all matter and energy in the universe emerged from this initial state.
 
 That the recession of galaxies from each other is a result of the expansion of space itself.
 
+![1234](7.jpg)
+
 # 8. Description of the Early Stages of the Universe (Inflation, Primordial Nucleosynthesis)
 
 **Cosmic Inflation:** In a very tiny fraction of the first second after the Big Bang (after about 10^-36 seconds), the universe expanded at an exponential rate, much faster than the speed of light. This explains the smoothness and homogeneous structure of the universe.
