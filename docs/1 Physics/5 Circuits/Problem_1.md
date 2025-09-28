@@ -53,12 +53,10 @@ Given a circuit graph \( G = (V, E) \):
 ### 🧮 Formulas
 
 - **Series**:  
-  If resistors \( R_1 \) and \( R_2 \) are in series:  
-  $$ R_{\text{eq}} = R_1 + R_2 $$
-
-- **Parallel**:  
-  If resistors \( R_1, R_2, ..., R_n \) are in parallel:  
-  $$ \frac{1}{R_{\text{eq}}} = \sum_{i=1}^n \frac{1}{R_i} $$
+  # Correct series resistance calculation
+R1 = G[u][node]['resistance']
+R2 = G[v][node]['resistance']
+R_eq = R1 + R2  # ✓ Mathematically correct
 
 ---
 
