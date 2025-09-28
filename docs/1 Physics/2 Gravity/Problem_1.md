@@ -207,18 +207,39 @@ $$ e^+ + e^- \rightarrow 2\gamma + 1.02 \text{ MeV} $$
 
 For stars more massive than about 1.3 solar masses, the CNO cycle dominates:
 
-`\[
-^{12}C + p \rightarrow ^{13}N + \gamma \rightarrow ^{13}C + e^+ + \nu_e
-\]`
-`\[
-^{13}C + p \rightarrow ^{14}N + \gamma
-\]`
-`\[
-^{14}N + p \rightarrow ^{15}O + \gamma \rightarrow ^{15}N + e^+ + \nu_e
-\]`
-`\[
-^{15}N + p \rightarrow ^{12}C + ^4He
-\]`
+# CNO Cycle - Carbon-Nitrogen-Oxygen Fusion
+
+## Complete CNO Cycle Reactions:
+
+$$ ^{12}C + p \rightarrow ^{13}N + \gamma $$
+$$ ^{13}N \rightarrow ^{13}C + e^+ + \nu_e $$
+$$ ^{13}C + p \rightarrow ^{14}N + \gamma $$
+$$ ^{14}N + p \rightarrow ^{15}O + \gamma $$
+$$ ^{15}O \rightarrow ^{15}N + e^+ + \nu_e $$
+$$ ^{15}N + p \rightarrow ^{12}C + ^4He $$
+
+## Net Reaction:
+$$ 4p \rightarrow ^4He + 2e^+ + 2\nu_e + 3\gamma $$
+
+## Cycle Description:
+The CNO cycle is a hydrogen fusion process that uses carbon, nitrogen, and oxygen isotopes as catalysts to convert hydrogen into helium. This cycle dominates energy production in massive stars.
+
+## Energy Production:
+- **Total energy released per cycle:** ~26.73 MeV
+- **Temperature dependence:** Strong (∝ T^20)
+- **Dominant in stars:** >1.5 solar masses
+
+## Catalytic Role:
+Carbon-12 is regenerated at the end of the cycle, allowing continuous operation while consuming only protons.
+
+## Neutrino Production:
+Two electron neutrinos are released per cycle via beta-plus decays.
+
+## Stellar Significance:
+- Primary energy source for massive stars
+- Requires higher temperatures than p-p chain
+- Responsible for stellar nucleosynthesis
+- Creates CNO isotopes in universe
 
 ## 4. Main Sequence: The Longest Stage
 
