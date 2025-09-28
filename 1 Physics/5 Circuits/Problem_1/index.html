@@ -215,16 +215,11 @@
 <hr/>
 <h3 id="formulas">🧮 Formulas</h3>
 <ul>
-<li>
-<p><strong>Series</strong>:<br/>
-  If resistors <span class="arithmatex">\( R_1 \)</span> and <span class="arithmatex">\( R_2 \)</span> are in series:<br/>
-  $$ R_{\text{eq}} = R_1 + R_2 $$</p>
-</li>
-<li>
-<p><strong>Parallel</strong>:<br/>
-  If resistors <span class="arithmatex">\( R_1, R_2, ..., R_n \)</span> are in parallel:<br/>
-  $$ \frac{1}{R_{\text{eq}}} = \sum_{i=1}^n \frac{1}{R_i} $$</p>
-</li>
+<li><strong>Series</strong>:<br/>
+  # Correct series resistance calculation
+R1 = G[u][node]['resistance']
+R2 = G[v][node]['resistance']
+R_eq = R1 + R2  # ✓ Mathematically correct</li>
 </ul>
 <hr/>
 <h2 id="option-2-python-implementation-with-networkx">🧪 Option 2: Python Implementation with <code>networkx</code></h2>
