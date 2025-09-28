@@ -54,6 +54,7 @@ Given a circuit graph \( G = (V, E) \):
 
 - **Series**:  
   # Correct series resistance calculation
+
 R1 = G[u][node]['resistance']
 R2 = G[v][node]['resistance']
 R_eq = R1 + R2  # ✓ Mathematically correct
