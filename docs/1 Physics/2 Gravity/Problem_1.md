@@ -25,40 +25,47 @@ Stars form within relatively dense concentrations of interstellar gas and dust k
 1. **Molecular Cloud Collapse**
 
    The free-fall time for gravitational collapse is given by:
-   # Serbest Düşüş Zamanı (Free-Fall Time)
+  # Free-Fall Time Formula
 
-## Formül:
+## Formula:
 
 $$ t_{ff} = \sqrt{\frac{3\pi}{32G\rho}} $$
 
-## Açıklama:
-Bu formül, **bir gaz bulutunun kendi yerçekimi altında çökmesi için gereken süreyi** hesaplar. Astrofizikte yıldız oluşum süreçlerinin modellenmesinde kullanılır.
+## Description:
+This formula calculates the **time required for a gas cloud to collapse under its own gravity**. It is used in astrophysics to model star formation processes.
 
-## Değişkenler:
+## Variables:
 
-| Sembol | Açıklama | Birim |
-|--------|----------|-------|
-| \( t_{ff} \) | Serbest düşüş zamanı | saniye (s) |
-| \( G \) | Yerçekimi sabiti | \( m^3 kg^{-1} s^{-2} \) |
-| \( \rho \) | Yoğunluk | \( kg/m^3 \) |
-| \( \pi \) | Pi sayısı | boyutsuz |
+| Symbol | Description | Units |
+|--------|-------------|-------|
+| \( t_{ff} \) | Free-fall time | seconds (s) |
+| \( G \) | Gravitational constant | \( m^3 kg^{-1} s^{-2} \) |
+| \( \rho \) | Density | \( kg/m^3 \) |
+| \( \pi \) | Pi constant | dimensionless |
 
-## Sabit Değerler:
+## Constant Values:
 - \( G = 6.67430 \times 10^{-11} \, m^3 kg^{-1} s^{-2} \)
 - \( \pi \approx 3.14159 \)
 
-## Örnek Hesaplama:
+## Example Calculation:
 
-**Moleküler bulut için:**
-- Yoğunluk: \( \rho = 10^{-18} \, kg/m^3 \)
+**For a molecular cloud:**
+- Density: \( \rho = 10^{-18} \, kg/m^3 \)
 
-**Hesaplama:**
-$$ t_{ff} = \sqrt{\frac{3 \times 3.14159}{32 \times 6.67430 \times 10^{-11} \times 10^{-18}}} \approx 3.8 \times 10^{12} \, s \, (\approx 120,000 \, \text{yıl}) $$
+**Calculation:**
+$$ t_{ff} = \sqrt{\frac{3 \times 3.14159}{32 \times 6.67430 \times 10^{-11} \times 10^{-18}}} \approx 3.8 \times 10^{12} \, s \, (\approx 120,000 \, \text{years}) $$
 
-## Fiziksel Önem:
-- Yıldız oluşum süreçlerinin zaman ölçeğini belirler
-- Gaz bulutlarının kararlılık analizinde kullanılır
-- Kozmik yapıların evrimini anlamaya yardımcı olur
+## Physical Significance:
+- Determines the timescale of star formation processes
+- Used in stability analysis of gas clouds
+- Helps understand the evolution of cosmic structures
+- Important for modeling gravitational collapse in interstellar medium
+
+## Applications:
+- Star formation studies
+- Protostellar cloud collapse models
+- Galactic evolution simulations
+- Cosmological structure formation
 
 ## 3. Thermonuclear Processes in Stellar Cores
 
