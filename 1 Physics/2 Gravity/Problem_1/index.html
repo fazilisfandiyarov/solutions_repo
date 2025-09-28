@@ -66,17 +66,19 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#formul">Formül:</a>
+<li class="toctree-l3"><a class="reference internal" href="#formula">Formula:</a>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#acklama">Açıklama:</a>
+<li class="toctree-l3"><a class="reference internal" href="#description">Description:</a>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#degiskenler">Değişkenler:</a>
+<li class="toctree-l3"><a class="reference internal" href="#variables">Variables:</a>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#sabit-degerler">Sabit Değerler:</a>
+<li class="toctree-l3"><a class="reference internal" href="#constant-values">Constant Values:</a>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#ornek-hesaplama">Örnek Hesaplama:</a>
+<li class="toctree-l3"><a class="reference internal" href="#example-calculation">Example Calculation:</a>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#fiziksel-onem">Fiziksel Önem:</a>
+<li class="toctree-l3"><a class="reference internal" href="#physical-significance">Physical Significance:</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#applications">Applications:</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#3-thermonuclear-processes-in-stellar-cores">3. Thermonuclear Processes in Stellar Cores</a>
 <ul>
@@ -280,58 +282,66 @@
 <li><strong>Molecular Cloud Collapse</strong></li>
 </ol>
 <p>The free-fall time for gravitational collapse is given by:
-   # Serbest Düşüş Zamanı (Free-Fall Time)</p>
-<h2 id="formul">Formül:</h2>
+  # Free-Fall Time Formula</p>
+<h2 id="formula">Formula:</h2>
 <div class="arithmatex">\[ t_{ff} = \sqrt{\frac{3\pi}{32G\rho}} \]</div>
-<h2 id="acklama">Açıklama:</h2>
-<p>Bu formül, <strong>bir gaz bulutunun kendi yerçekimi altında çökmesi için gereken süreyi</strong> hesaplar. Astrofizikte yıldız oluşum süreçlerinin modellenmesinde kullanılır.</p>
-<h2 id="degiskenler">Değişkenler:</h2>
+<h2 id="description">Description:</h2>
+<p>This formula calculates the <strong>time required for a gas cloud to collapse under its own gravity</strong>. It is used in astrophysics to model star formation processes.</p>
+<h2 id="variables">Variables:</h2>
 <table>
 <thead>
 <tr>
-<th>Sembol</th>
-<th>Açıklama</th>
-<th>Birim</th>
+<th>Symbol</th>
+<th>Description</th>
+<th>Units</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><span class="arithmatex">\( t_{ff} \)</span></td>
-<td>Serbest düşüş zamanı</td>
-<td>saniye (s)</td>
+<td>Free-fall time</td>
+<td>seconds (s)</td>
 </tr>
 <tr>
 <td><span class="arithmatex">\( G \)</span></td>
-<td>Yerçekimi sabiti</td>
+<td>Gravitational constant</td>
 <td><span class="arithmatex">\( m^3 kg^{-1} s^{-2} \)</span></td>
 </tr>
 <tr>
 <td><span class="arithmatex">\( \rho \)</span></td>
-<td>Yoğunluk</td>
+<td>Density</td>
 <td><span class="arithmatex">\( kg/m^3 \)</span></td>
 </tr>
 <tr>
 <td><span class="arithmatex">\( \pi \)</span></td>
-<td>Pi sayısı</td>
-<td>boyutsuz</td>
+<td>Pi constant</td>
+<td>dimensionless</td>
 </tr>
 </tbody>
 </table>
-<h2 id="sabit-degerler">Sabit Değerler:</h2>
+<h2 id="constant-values">Constant Values:</h2>
 <ul>
 <li><span class="arithmatex">\( G = 6.67430 \times 10^{-11} \, m^3 kg^{-1} s^{-2} \)</span></li>
 <li><span class="arithmatex">\( \pi \approx 3.14159 \)</span></li>
 </ul>
-<h2 id="ornek-hesaplama">Örnek Hesaplama:</h2>
-<p><strong>Moleküler bulut için:</strong>
-- Yoğunluk: <span class="arithmatex">\( \rho = 10^{-18} \, kg/m^3 \)</span></p>
-<p><strong>Hesaplama:</strong>
-$$ t_{ff} = \sqrt{\frac{3 \times 3.14159}{32 \times 6.67430 \times 10^{-11} \times 10^{-18}}} \approx 3.8 \times 10^{12} \, s \, (\approx 120,000 \, \text{yıl}) $$</p>
-<h2 id="fiziksel-onem">Fiziksel Önem:</h2>
+<h2 id="example-calculation">Example Calculation:</h2>
+<p><strong>For a molecular cloud:</strong>
+- Density: <span class="arithmatex">\( \rho = 10^{-18} \, kg/m^3 \)</span></p>
+<p><strong>Calculation:</strong>
+$$ t_{ff} = \sqrt{\frac{3 \times 3.14159}{32 \times 6.67430 \times 10^{-11} \times 10^{-18}}} \approx 3.8 \times 10^{12} \, s \, (\approx 120,000 \, \text{years}) $$</p>
+<h2 id="physical-significance">Physical Significance:</h2>
 <ul>
-<li>Yıldız oluşum süreçlerinin zaman ölçeğini belirler</li>
-<li>Gaz bulutlarının kararlılık analizinde kullanılır</li>
-<li>Kozmik yapıların evrimini anlamaya yardımcı olur</li>
+<li>Determines the timescale of star formation processes</li>
+<li>Used in stability analysis of gas clouds</li>
+<li>Helps understand the evolution of cosmic structures</li>
+<li>Important for modeling gravitational collapse in interstellar medium</li>
+</ul>
+<h2 id="applications">Applications:</h2>
+<ul>
+<li>Star formation studies</li>
+<li>Protostellar cloud collapse models</li>
+<li>Galactic evolution simulations</li>
+<li>Cosmological structure formation</li>
 </ul>
 <h2 id="3-thermonuclear-processes-in-stellar-cores">3. Thermonuclear Processes in Stellar Cores</h2>
 <h3 id="31-types-of-thermonuclear-reactions">3.1. Types of Thermonuclear Reactions</h3>
