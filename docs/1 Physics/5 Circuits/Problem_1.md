@@ -64,56 +64,9 @@ Given a circuit graph \( G = (V, E) \):
 
 ## 🧪 Option 2: Python Implementation with `networkx`
 
-```python
-import networkx as nx
-
-def equivalent_resistance(graph, source, target):
-    G = graph.copy()
-    while True:
-        changed = False
-
-        # Series reduction
-        for node in list(G.nodes):
-            if node in [source, target] or G.degree[node] != 2:
-                continue
-            neighbors = list(G.neighbors(node))
-            if len(neighbors) != 2:
-                continue
-            u, v = neighbors
-            if G.number_of_edges(u, node) > 1 or G.number_of_edges(v, node) > 1:
-                continue
-
-            R1 = G[u][node]['resistance']
-            R2 = G[v][node]['resistance']
-            R_eq = R1 + R2
-
-            G.add_edge(u, v, resistance=R_eq)
-            G.remove_node(node)
-            changed = True
-            break
-
-        if changed:
-            continue
-
-        # Parallel reduction
-        for u, v in list(G.edges()):
-            parallel_edges = [(u, v)]
-            if G.number_of_edges(u, v) > 1:
-                resistances = [G[u][v]['resistance']]
-                for i in range(G.number_of_edges(u, v) - 1):
-                    resistances.append(G[u][v + f'_{i}']['resistance'])
-                R_eq = 1 / sum(1 / R for R in resistances)
-                G.remove_edges_from(parallel_edges)
-                G.add_edge(u, v, resistance=R_eq)
-                changed = True
-                break
-
-        if not changed:
-            break
-
-    return G[source][target]['resistance']
-```
-![alt text](image-1.png)
+![asd](download3.png)
+![asd](download4.png)
+![asd](download5.png)
 ---
 
 ## 🔬 Examples
