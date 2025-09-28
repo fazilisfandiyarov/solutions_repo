@@ -46,4 +46,3 @@ The perfect match between the observed abundances of light elements and the theo
 
 The idea, indicated by all of these, that the universe had a beginning and has evolved.
 
-I hope this answer has clearly addressed your question. If you have other questions about the theory, you just need to ask them.
