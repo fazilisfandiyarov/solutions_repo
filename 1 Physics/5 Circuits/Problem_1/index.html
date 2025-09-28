@@ -228,55 +228,10 @@
 </ul>
 <hr/>
 <h2 id="option-2-python-implementation-with-networkx">🧪 Option 2: Python Implementation with <code>networkx</code></h2>
-<pre><code class="language-python">import networkx as nx
-
-def equivalent_resistance(graph, source, target):
-    G = graph.copy()
-    while True:
-        changed = False
-
-        # Series reduction
-        for node in list(G.nodes):
-            if node in [source, target] or G.degree[node] != 2:
-                continue
-            neighbors = list(G.neighbors(node))
-            if len(neighbors) != 2:
-                continue
-            u, v = neighbors
-            if G.number_of_edges(u, node) &gt; 1 or G.number_of_edges(v, node) &gt; 1:
-                continue
-
-            R1 = G[u][node]['resistance']
-            R2 = G[v][node]['resistance']
-            R_eq = R1 + R2
-
-            G.add_edge(u, v, resistance=R_eq)
-            G.remove_node(node)
-            changed = True
-            break
-
-        if changed:
-            continue
-
-        # Parallel reduction
-        for u, v in list(G.edges()):
-            parallel_edges = [(u, v)]
-            if G.number_of_edges(u, v) &gt; 1:
-                resistances = [G[u][v]['resistance']]
-                for i in range(G.number_of_edges(u, v) - 1):
-                    resistances.append(G[u][v + f'_{i}']['resistance'])
-                R_eq = 1 / sum(1 / R for R in resistances)
-                G.remove_edges_from(parallel_edges)
-                G.add_edge(u, v, resistance=R_eq)
-                changed = True
-                break
-
-        if not changed:
-            break
-
-    return G[source][target]['resistance']
-</code></pre>
-<h2 id="_1"><img alt="alt text" src="image-1.png"/></h2>
+<p><img alt="asd" src="../download3.png"/>
+<img alt="asd" src="../download4.png"/>
+<img alt="asd" src="../download5.png"/></p>
+<hr/>
 <h2 id="examples">🔬 Examples</h2>
 <h3 id="example-1-series">Example 1: Series</h3>
 <ul>
