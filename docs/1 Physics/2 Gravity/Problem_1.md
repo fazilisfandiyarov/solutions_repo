@@ -267,9 +267,20 @@ $$ \frac{dP}{dr} = -\rho g $$
 
 ### 4.2. Mass-Luminosity Relation
 
-`\[
-\frac{L}{L_\odot} \approx \left(\frac{M}{M_\odot}\right)^{3.5}
-\]`
+# Mass-Luminosity Relation
+
+$$ \frac{L}{L_\odot} \approx \left(\frac{M}{M_\odot}\right)^{3.5} $$
+
+**Main sequence stars relation**  
+**Empirical power law scaling**  
+**Steep mass dependence**  
+**Nuclear fusion rate correlation**  
+**Stellar lifetime determination**  
+**Exponent varies with mass range**  
+**Core temperature scaling**  
+**Pressure-temperature relation**  
+**Observational Hertzsprung-Russell fit**  
+**Stellar evolution modeling**
 
 Where:
 - \(L\) is luminosity
