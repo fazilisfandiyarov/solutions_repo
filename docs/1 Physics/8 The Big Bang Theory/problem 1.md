@@ -31,6 +31,8 @@ One of the most surprising discoveries of modern cosmology is that the matter we
 
 **Dark Energy:** It is an even more mysterious form of energy discovered to accelerate the expansion of the universe. Although its nature is not fully understood, it is the largest component of the universe and is responsible for about 68% of it.
 
+![sh](3.png)
+
 # 4. Unsolved Problems and Open-Ended Questions in the Big Bang Theory
 
 Although the Big Bang theory is successful, it does not explain everything. Some fundamental questions remain unanswered:
@@ -42,6 +44,8 @@ Although the Big Bang theory is successful, it does not explain everything. Some
 **The Nature of Dark Matter and Dark Energy:** What are their fundamental components?
 
 **The Singularity:** What did the "singularity" of infinite density exactly mean at the very beginning of the Big Bang? This is a point where general relativity and quantum mechanics need to be unified.
+
+![sh](4.png)
 
 # 5. Overview of Alternative Cosmological Models
 
@@ -82,6 +86,8 @@ That the recession of galaxies from each other is a result of the expansion of s
 **Cosmic Inflation:** In a very tiny fraction of the first second after the Big Bang (after about 10^-36 seconds), the universe expanded at an exponential rate, much faster than the speed of light. This explains the smoothness and homogeneous structure of the universe.
 
 **Primordial Nucleosynthesis:** After the inflation period, the universe was in a "plasma soup." Around the first three minutes, the temperature and density dropped to a level where protons and neutrons could merge to form the first atomic nuclei (hydrogen, helium, lithium). The predictions of this process are in perfect agreement with the observed elemental abundances.
+
+![sh](8.webp)
 
 # 9. The Main Evidence for the Theory (Cosmic Microwave Background Radiation, Expansion of the Universe)
 
