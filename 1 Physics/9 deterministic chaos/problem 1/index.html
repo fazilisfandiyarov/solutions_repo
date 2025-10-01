@@ -13,7 +13,7 @@
 <script>
         // Current page data
         var mkdocs_page_name = "Problem 1";
-        var mkdocs_page_input_path = "1 Physics/3 Waves/Problem_1.md";
+        var mkdocs_page_input_path = "1 Physics/9 deterministic chaos/problem 1.md";
         var mkdocs_page_url = null;
       </script>
 <!--[if lt IE 9]>
@@ -62,11 +62,9 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="reference internal current">3 Waves</a>
-<ul class="current">
-<li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 1</a>
-<ul class="current">
-</ul>
+<li class="toctree-l1"><a class="reference internal">3 Waves</a>
+<ul>
+<li class="toctree-l2"><a class="reference internal" href="../../3%20Waves/Problem_1/">Problem 1</a>
 </li>
 </ul>
 </li>
@@ -102,9 +100,11 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal">9 deterministic chaos</a>
-<ul>
-<li class="toctree-l2"><a class="reference internal" href="../../9%20deterministic%20chaos/problem%201/">Problem 1</a>
+<li class="toctree-l1 current"><a class="reference internal current">9 deterministic chaos</a>
+<ul class="current">
+<li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 1</a>
+<ul class="current">
+</ul>
 </li>
 </ul>
 </li>
@@ -174,7 +174,7 @@
 <ul class="wy-breadcrumbs">
 <li><a aria-label="Docs" class="icon icon-home" href="../../.."></a></li>
 <li class="breadcrumb-item">1 Physics</li>
-<li class="breadcrumb-item">3 Waves</li>
+<li class="breadcrumb-item">9 deterministic chaos</li>
 <li class="breadcrumb-item active">Problem 1</li>
 <li class="wy-breadcrumbs-aside">
 </li>
@@ -183,81 +183,60 @@
 </div>
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
-<h1 id="problem-1">Problem 1</h1>
-<h1 id="interference-patterns-from-point-wave-sources-on-a-water-surface">Interference Patterns from Point Wave Sources on a Water Surface</h1>
-<h2 id="objective">Objective</h2>
-<p>To analyze the interference pattern formed by the superposition of circular waves emitted from point sources placed at the vertices of a <em>regular polygon</em> on the water surface.</p>
-<h2 id="motivation">Motivation</h2>
-<p>Interference occurs when waves overlap, creating complex patterns that illustrate how waves interact. By placing point sources at the vertices of a regular polygon, we can observe and analyze the constructive and destructive interference patterns resulting from wave superposition.</p>
-<hr/>
-<h2 id="selecting-a-regular-polygon">Selecting a Regular Polygon</h2>
-<p>We select a <em>square</em> (regular polygon with 4 equal sides and angles) as the configuration.</p>
-<hr/>
-<h2 id="position-the-sources">Position the Sources</h2>
-<p>Let the side length of the square be L, and place the center of the square at the origin (0, 0). The coordinates of the four sources are:</p>
-<ul>
-<li><span class="arithmatex">\((x_1, y_1) = (-L/2, -L/2)\)</span></li>
-<li><span class="arithmatex">\((x_2, y_2) = (L/2, -L/2)\)</span></li>
-<li><span class="arithmatex">\((x_3, y_3) = (L/2, L/2)\)</span></li>
-<li><span class="arithmatex">\((x_4, y_4) = (-L/2, L/2)\)</span></li>
-</ul>
-<hr/>
-<h2 id="wave-equations-for-each-source">Wave Equations for Each Source</h2>
-<p>Each wave is described by:</p>
-<div class="arithmatex">\[
-\eta_i(x, y, t) = \frac{A}{\sqrt{r_i}} \cdot \cos(kr_i - \omega t + \phi)
-\]</div>
-<p>Where:</p>
-<ul>
-<li><span class="arithmatex">\(r_i = \sqrt{(x - x_i)^2 + (y - y_i)^2}\)</span></li>
-<li><span class="arithmatex">\(A\)</span>: Amplitude of the wave</li>
-<li><span class="arithmatex">\(k = \frac{2\pi}{\lambda}\)</span>: Wave number</li>
-<li><span class="arithmatex">\(\omega = 2\pi f\)</span>: Angular frequency</li>
-<li><span class="arithmatex">\(\phi\)</span>: Initial phase (assumed 0 for all sources for simplicity)</li>
-</ul>
-<hr/>
-<h2 id="superposition-of-waves">Superposition of Waves</h2>
-<p>The total displacement at point <span class="arithmatex">\((x, y)\)</span> is the sum:</p>
-<div class="arithmatex">\[
-\eta_{\text{sum}}(x, y, t) = \sum_{i=1}^{4} \eta_i(x, y, t)
-\]</div>
-<hr/>
-<h2 id="analyzing-interference-patterns">Analyzing Interference Patterns</h2>
-<h3 id="constructive-interference">Constructive Interference</h3>
-<p>Occurs when the waves arrive in phase:</p>
-<div class="arithmatex">\[
-kr_i - \omega t \approx kr_j - \omega t \quad \text{for } i \neq j
-\]</div>
-<p>This leads to <em>amplification</em>.</p>
-<h3 id="destructive-interference">Destructive Interference</h3>
-<p>Occurs when waves are out of phase by <span class="arithmatex">\(<span class="arithmatex">\(\pi\)</span>\)</span>:</p>
-<div class="arithmatex">\[
-kr_i - \omega t \approx kr_j - \omega t + \pi
-\]</div>
-<p>This leads to <em>cancellation</em>.</p>
-<hr/>
-<h2 id="visualization">Visualization</h2>
-<p>The resulting pattern can be visualized using a 2D color map of <span class="arithmatex">\(\eta_{\text{sum}}(x, y, t)\)</span> at a fixed time. High-intensity regions represent constructive interference; dark regions represent destructive interference.</p>
-<p><img alt="alt text" src="../interference_animation.gif"/></p>
-<hr/>
-<h2 id="optional-parameters-used-for-simulation">Optional Parameters Used for Simulation</h2>
-<ul>
-<li>Amplitude <span class="arithmatex">\(A = 1\)</span></li>
-<li>Wavelength <span class="arithmatex">\(\lambda = 2\)</span></li>
-<li>Frequency <span class="arithmatex">\(f = 1\)</span></li>
-<li>Phase <span class="arithmatex">\(\phi = 0\)</span></li>
-<li>Square side length <span class="arithmatex">\(L = 4\)</span></li>
-</ul>
-<h2 id="3d-visualization">3d Visualization</h2>
-<p><img alt="alt text" src="../interference_4_sources_slower-1.gif"/></p>
-<h2 id="conclusion">Conclusion</h2>
-<p>By placing wave sources at the corners of a square and applying the principle of superposition, we can visualize intricate interference patterns. This exercise provides insight into the behavior of waves and how geometry influences interference on a water surface.</p>
-<hr/>
+<p>import numpy as np
+import matplotlib.pyplot as plt</p>
+<p>def logistic_map(r, x):
+    """Logistic map equation - simple nonlinear system showing chaos"""
+    return r * x * (1 - x)</p>
+<p>def simulate_butterfly_effect():
+    """Demonstrate sensitivity to initial conditions"""
+    # System parameter
+    r = 3.9  # Chaotic regime</p>
+<pre><code># Two very close initial conditions
+x0_a = 0.5
+x0_b = 0.500001  # Difference of 0.000001
+
+iterations = 50
+trajectory_a = [x0_a]
+trajectory_b = [x0_b]
+
+x_a = x0_a
+x_b = x0_b
+
+for i in range(iterations):
+    x_a = logistic_map(r, x_a)
+    x_b = logistic_map(r, x_b)
+    trajectory_a.append(x_a)
+    trajectory_b.append(x_b)
+
+return trajectory_a, trajectory_b
+</code></pre>
+<h1 id="run-simulation">Run simulation</h1>
+<p>traj_a, traj_b = simulate_butterfly_effect()</p>
+<h1 id="plot-results">Plot results</h1>
+<p>plt.figure(figsize=(12, 4))</p>
+<p>plt.subplot(1, 2, 1)
+plt.plot(traj_a, 'b-', label='x₀ = 0.5', alpha=0.7)
+plt.plot(traj_b, 'r--', label='x₀ = 0.500001', alpha=0.7)
+plt.title('Butterfly Effect in Logistic Map')
+plt.xlabel('Iteration')
+plt.ylabel('Population (x)')
+plt.legend()
+plt.grid(True, alpha=0.3)</p>
+<p>plt.subplot(1, 2, 2)
+difference = np.abs(np.array(traj_a) - np.array(traj_b))
+plt.semilogy(difference, 'g-')
+plt.title('Difference Between Trajectories (Log Scale)')
+plt.xlabel('Iteration')
+plt.ylabel('|Difference|')
+plt.grid(True, alpha=0.3)</p>
+<p>plt.tight_layout()
+plt.show()</p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
-<a class="btn btn-neutral float-left" href="../../2%20Gravity/Problem_3/" title="Problem 3"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-<a class="btn btn-neutral float-right" href="../../4%20Electromagnetism/Problem_1/" title="Problem 1">Next <span class="icon icon-circle-arrow-right"></span></a>
+<a class="btn btn-neutral float-left" href="../../8%20The%20Big%20Bang%20Theory/problem%201/" title="1. Hubble-Lemaître Law and Inferences about the Expansion of the Universe"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+<a class="btn btn-neutral float-right" href="../../../2%20Mathematics/1%20Linear_algebra/" title="Linear Algebra">Next <span class="icon icon-circle-arrow-right"></span></a>
 </div>
 <hr/>
 <div role="contentinfo">
@@ -272,8 +251,8 @@ kr_i - \omega t \approx kr_j - \omega t + \pi
 </div>
 <div aria-label="Versions" class="rst-versions" role="note">
 <span class="rst-current-version" data-toggle="rst-current-version">
-<span><a href="../../2%20Gravity/Problem_3/" style="color: #fcfcfc">« Previous</a></span>
-<span><a href="../../4%20Electromagnetism/Problem_1/" style="color: #fcfcfc">Next »</a></span>
+<span><a href="../../8%20The%20Big%20Bang%20Theory/problem%201/" style="color: #fcfcfc">« Previous</a></span>
+<span><a href="../../../2%20Mathematics/1%20Linear_algebra/" style="color: #fcfcfc">Next »</a></span>
 </span>
 </div>
 <script src="../../../js/jquery-3.6.0.min.js"></script>
