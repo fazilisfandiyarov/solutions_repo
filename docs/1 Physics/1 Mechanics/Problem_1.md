@@ -214,3 +214,7 @@ Each modification increases realism at the cost of mathematical simplicity, ofte
 *Figure 4: Effect of gravity on range - weaker gravity allows for longer travel distances*
 
 [MyColab](https://colab.research.google.com/drive/12NE06aE-DRrZT9HjrQ9rJTGDBE15eayv?usp=sharing)
+
+$$
+.
+$$
